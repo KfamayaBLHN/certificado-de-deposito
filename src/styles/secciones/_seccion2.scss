@@ -1,0 +1,10 @@
+.h2 {
+    padding-bottom: 15px !important;
+}
+
+@media (min-width: $size-xl) {
+    .h2 {
+        line-height: 2.75rem;
+    }
+    
+}

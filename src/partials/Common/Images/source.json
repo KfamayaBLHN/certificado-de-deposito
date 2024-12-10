@@ -1,0 +1,38 @@
+{
+  "ObtenSvg": {
+    "src": "/imagenes/icons/ICN_01_Obten_TD_CAA_BLHN.svg",
+    "alt": "Obtén tu Tarjeta de Débito internacional",
+    "w": 157,
+    "h": 157
+  },
+  "AperturaSvg": {
+    "src": "/imagenes/icons/ICN_02_Apertura_Cuenta_CAA_BLHN.svg",
+    "alt": "Apertura de Cuenta de Ahorro",
+    "w": 157,
+    "h": 157
+  },
+  "DisfrutaSvg": {
+    "src": "/imagenes/icons/ICN_03_Disfruta_Tasa_CAA_BLHN.svg",
+    "alt": "Disfruta un interés competitivo",
+    "w": 157,
+    "h": 157
+  },
+  "AccedeSvg": {
+    "src": "/imagenes/icons/ICN_04_Accede_BNT_CAA_BLHN.svg",
+    "alt": "Accede a Bancanet para gestiones",
+    "w": 157,
+    "h": 157
+  },
+  "CompraSvg": {
+    "src": "/imagenes/icons/ICN_05_Compra_Online_CAA_BLHN.svg",
+    "alt": "Compra de divisas en línea",
+    "w": 157,
+    "h": 157
+  },
+  "AcumulaSvg": {
+    "src": "/imagenes/icons/ICN_06_Acumula_Points_CAA_BLHN.svg",
+    "alt": "Acumula puntos por compras",
+    "w": 157,
+    "h": 157
+  }
+}
