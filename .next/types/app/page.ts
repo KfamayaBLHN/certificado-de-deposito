@@ -1,4 +1,4 @@
-// File: C:\Users\kfamaya\Documents\Projects-landings\cuenta_ahorro_avanza\cuenta_avanza_v1\src\app\page.js
+// File: C:\Users\dvlopez\Documents\FrontEnd\landing_certificado_deposito\certificado-de-deposito\src\app\page.js
 import * as entry from '../../../src/app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

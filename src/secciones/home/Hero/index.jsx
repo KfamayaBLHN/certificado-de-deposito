@@ -7,20 +7,20 @@ const Banner = () => {
   return (
     <Hero className="hero-home" site_url={site_url}>
       <h1 className="text-gray">
-      <span className="colorTitle1">Alcanzar tus metas es fácil con tu</span><span className="colorTitle2"> Cuenta Ahorro Avanza </span>
+      <span className="colorTitle1">Transforma tus ahorros con tu Certificado de Depósito</span>
       </h1>
       <div className="d-none d-md-block">
-        <p className="h4 text-gray pt-1 fw-normal">
-          Da el primer paso para cumplir tus sueños,&nbsp;<br/>
-          solicítala en lempiras y dólares de manera rápida y segura 
+        <p className="h4 text-white pt-1 fw-normal">
+        Garantiza tu bienestar a largo plazo, con una tasa de interés&nbsp;<br/>
+        que te ayude a hacer crecer tu dinero
         </p>
-        <a href='https://www.lafise.com/blh' className="btn btn-light btn-lg mt-3">¡Abrir mi cuenta!</a>
+        <a href='https://www.lafise.com/blh' className="btn btn-light btn-lg mt-3">¡Obtenlo ya!</a>
       </div>
       <div className="d-sm-block d-md-none">
-        <p className="h4 text-gray pt-1 fw-normal">
-          Da el primer paso para cumplir tus sueños, solicítala en lempiras y dólares de manera rápida y segura 
+        <p className="h4 text-white pt-1 fw-normal">
+        Garantiza tu bienestar a largo plazo, con una tasa de interés que te ayude a hacer crecer tu dinero  
         </p>
-        <a href='https://www.lafise.com/blh' className="btn btn-light btn-lg mt-3">¡Abrir mi cuenta!</a>
+        <a href='https://www.lafise.com/blh' className="btn btn-light btn-lg mt-3">¡Obtenlo ya!</a>
       </div>
     </Hero>
   );

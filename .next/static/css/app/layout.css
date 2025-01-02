@@ -1,5 +1,5 @@
 /*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[13].use[5]!./src/styles/styles.scss ***!
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[13].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[13].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[14].oneOf[13].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[14].oneOf[13].use[5]!./src/styles/styles.scss ***!
   \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 @charset "UTF-8";
 /**
@@ -311,7 +311,7 @@ section {
 
 .hero-home {
   height: 670px;
-  background-color: #E6F7FD !important;
+  background-color: #018765 !important;
   z-index: 1000;
   padding-bottom: 0 !important;
   overflow: hidden;
@@ -321,7 +321,7 @@ section {
   margin-top: 20px;
   width: 100%;
   height: 310px;
-  background: url("/imagenes/banner-footage/BKG_BLHN_Banner_GRL_Section01_Cuenta_Ahorro_Avanza_Desktop_260824_01@1x.webp") no-repeat center center;
+  background: url("/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-certificado-deposito-desktop-031124-01@1x.webp") no-repeat center center;
   alt: "Hombre sosteniendo celular solicitando su Cuenta Ahorro Avanza de manera fácil y sencilla";
 }
 .hero-home:after {
@@ -342,7 +342,7 @@ section {
 }
 
 .colorTitle1 {
-  color: #4D4D4D;
+  color: #ffffff;
 }
 
 .colorTitle2 {
@@ -357,6 +357,7 @@ section {
 
 .h4 {
   font-size: 1.2rem !important;
+  line-height: 1.75rem !important;
 }
 
 @media (min-width: 768px) {
@@ -393,7 +394,7 @@ section {
   .hero-home:before {
     width: 603px;
     height: 500px;
-    background: url("/imagenes/banner-footage/BKG_BLHN_Banner_GRL_Section01_Cuenta_Ahorro_Avanza_Desktop_260824_01@2x.webp") no-repeat center center;
+    background: url("/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-certificado-deposito-desktop-031124-01@2x.webp") no-repeat center center;
   }
   .hero-home:before {
     background-size: cover;
@@ -411,10 +412,10 @@ section {
   .hero-home:before {
     width: 692px;
     height: 430px;
-    background: url("/imagenes/banner-footage/BKG_BLHN_Banner_GRL_Section01_Cuenta_Ahorro_Avanza_Desktop_260824_01@2x.webp") no-repeat center center;
+    background: url("/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-certificado-deposito-desktop-031124-01@2x.webp") no-repeat center center;
   }
   .hero-home .text-gray {
-    width: 550px;
+    width: 510px;
   }
   .hero-home:before {
     background-size: cover;
@@ -438,7 +439,7 @@ section {
   .hero-home:before {
     width: 722px;
     height: 450px;
-    background: url("/imagenes/banner-footage/BKG_BLHN_Banner_GRL_Section01_Cuenta_Ahorro_Avanza_Desktop_260824_01@2x.webp") no-repeat center center;
+    background: url("/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-certificado-deposito-desktop-031124-01@2x.webp") no-repeat center center;
   }
   .hero-home .text-gray {
     width: 550px;
@@ -748,9 +749,9 @@ section {
 }
 
 .btn {
-  color: #ffffff !important;
-  background-color: #018765 !important;
-  border-color: #018765;
+  color: #018765 !important;
+  background-color: #ffffff !important;
+  border-color: #ffffff;
   padding: 15px 28px !important;
   font-size: 1.1rem;
 }
@@ -763,7 +764,7 @@ section {
 
 .btn-light:hover {
   background: #00583C !important;
-  color: #fff;
+  color: #018765;
   border-color: #00583C;
   border: 1px !important;
 }
