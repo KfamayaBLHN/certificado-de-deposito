@@ -7,7 +7,6 @@ import Accede from './Accede';
 import Compra from './Compra';
 import Obten from './Obten';
 
-
 const Relacionados = (props) => {
   const backgroundColor = "bg-gray-1";
   return (

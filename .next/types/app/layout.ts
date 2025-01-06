@@ -1,4 +1,4 @@
-// File: C:\Users\dvlopez\Documents\FrontEnd\landing_certificado_deposito\certificado-de-deposito\src\app\layout.js
+// File: C:\Users\kfamaya\Documents\frontend\landing_pages\certificado-de-deposito\src\app\layout.js
 import * as entry from '../../../src/app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
