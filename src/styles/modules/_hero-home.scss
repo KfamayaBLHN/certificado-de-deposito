@@ -1,12 +1,12 @@
 // home
 .hero-home {
   height: 670px;
-  background-color: #E6F7FD !important;
+  background-color: #018765 !important;
   @include hero-basic(100%, //width
     310px, //heigt
-    '/imagenes/banner-footage/BKG_BLHN_Banner_GRL_Section01_Cuenta_Ahorro_Avanza_Desktop_260824_01@1x.webp', //imagen
+    '/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-certificado-deposito-desktop-031124-01@1x.webp', //imagen
     20px, //marginTop
-    280px, //width
+    280px, //width 
     280px, //height
     '', //fondo
     0px, //bottom
@@ -36,7 +36,7 @@
   background: #efebeb !important;
 }
 
-.colorTitle1 { color: #4D4D4D; }
+.colorTitle1 { color: #ffffff; }
 .colorTitle2 { color: #018765; }
 
 .text-gray {
@@ -46,6 +46,7 @@
 }
 .h4 {
   font-size: 1.2rem !important;
+  line-height: 1.75rem !important;
 }
 
 @media (min-width: $size-md ) {
@@ -83,7 +84,7 @@
     @include hero-basic-xl(
       603px, //width
       500px, //heigth
-      '/imagenes/banner-footage/BKG_BLHN_Banner_GRL_Section01_Cuenta_Ahorro_Avanza_Desktop_260824_01@2x.webp' //imagen
+      '/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-certificado-deposito-desktop-031124-01@2x.webp' //imagen
     );
 
     &:before {
@@ -102,11 +103,11 @@
     @include hero-basic-xl(
       692px, //width
       430px, //heigth
-      '/imagenes/banner-footage/BKG_BLHN_Banner_GRL_Section01_Cuenta_Ahorro_Avanza_Desktop_260824_01@2x.webp' //imagen
+      '/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-certificado-deposito-desktop-031124-01@2x.webp' //imagen
     );
 
     .text-gray {
-      width: 550px;
+      width: 510px;
     }
 
     &:before {
@@ -132,7 +133,7 @@
     @include hero-basic-xxl(
       722px, //width
       450px, //heigth
-      '/imagenes/banner-footage/BKG_BLHN_Banner_GRL_Section01_Cuenta_Ahorro_Avanza_Desktop_260824_01@2x.webp' //imagen
+      '/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-certificado-deposito-desktop-031124-01@2x.webp' //imagen
     );
 
     .text-gray {
