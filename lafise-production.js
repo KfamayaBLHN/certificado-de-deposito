@@ -5,12 +5,12 @@ const replace = require('replace-in-file');
 let _assetPrefix = './';
 
 if ( process.env.NODE_ENV == 'production') {
- _assetPrefix = `/blh/banca-personal/cuenta-ahorro-avanza/v1.0.7/`;
+ _assetPrefix = `/blh/banca-personal/certificado_deposito/v1.0.0/`;
 }
 
 const options = {
   files: [
-    `C:/Users/kfamaya/Documents/Projects-landings/cuenta_ahorro_avanza/cuenta_avanza_v1/out/_next/static/css/*.css`,
+    `C:/Users/kfamaya/Documents/frontend/landing_pages/certificado-de-deposito/out/_next/static/css/*.css`,
   ],
   from: /([/])imagenes/g,
   to: `${_assetPrefix}imagenes`,
