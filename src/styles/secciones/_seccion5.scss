@@ -1,6 +1,6 @@
 
 .section-5{
-  background-color: white;
+  background-color: #F9F9F9;
   color: #4d4d4d;
   padding: 57px 0px;
 }
@@ -21,10 +21,21 @@
   align-items: center;
 }
 
-.h2 {
+.qs{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.section5 .h2 {
   padding-bottom: 30px;
   font-size: 2rem;
-  // text-align: center;
+  text-align: center;
+}
+.section5 .p {
+  padding: 0px 15px;
+  text-align: center;
 }
 
 .title {
@@ -35,6 +46,7 @@
 .section-5 .accordion-body {
   padding: 0;
   padding-top: 10px;
+  background-color: #F9F9F9;
 }
 
 @media (min-width: $size-xl) {

@@ -9,7 +9,15 @@
   }
   .card-footer {
     --bs-card-cap-padding-y: 0;
+    border-top: none !important;
   }
+}
+
+.cardcenter .cc{
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  text-align: left !important;
 }
 
 .card-groud-n3 {
@@ -18,14 +26,14 @@
 
   .card {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: left;
+    justify-content: left;
     width: auto;
     height: 275px;
     padding-bottom: 40px;
 
     .card-body {
-      text-align: center;
+      text-align: left;
       width: 100%;
       height: auto;
     }
@@ -85,7 +93,7 @@
       height: 280px;
 
       .card-body {
-        text-align: center;
+        text-align: left;
         width: 100%;
       }
 
@@ -111,7 +119,7 @@
       height: 280px;
 
       .card-body {
-        text-align: center;
+        text-align: left;
         width: 100%;
       }
 

@@ -1,16 +1,19 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import Disfruta from './Disfruta';
-import Apertura from './Apertura';
-import Acumula from './Acumula';
-import Accede from './Accede';
-import Compra from './Compra';
-import Obten from './Obten';
+import ChicoBlog from './ChicoBlog';
+import ChicaBlog from './ChicaBlog';
+import ChicaBlog2 from './ChicaBlog2';
+import Card1 from './beneficios/card1';
+import Card2 from './beneficios/card2';
+import Card3 from './beneficios/card3';
+import Card4 from './beneficios/card4';
+import Card5 from './beneficios/card5';
+import Card6 from './beneficios/card6';
 
 const Relacionados = (props) => {
   const backgroundColor = "bg-gray-1";
   return (
-    <section className={`py-5 overflow-hidden ${backgroundColor}`}>
+    <section className={`py-5 overflow-hidden `}>
       <div className="container-fluid">{props.children}</div>
     </section>
   );
@@ -44,24 +47,39 @@ const Cards = props => {
     <article >
       {
         props.type == 'cards' && <>
-          <Carousel responsive={responsive} autoPlay={true} infinite={true} autoPlaySpeed={3000} showDots={true}>
+          <Carousel responsive={responsive} autoPlay={false} infinite={true} autoPlaySpeed={3000} showDots={true}>
             <Item>
-              <Obten />
+              <ChicoBlog />
             </Item>
             <Item>
-              <Apertura />
+              <ChicaBlog />
             </Item>
             <Item>
-              <Disfruta />
+              <ChicaBlog2 />
+            </Item>
+          </Carousel>
+        </>
+      }
+      {
+        props.type == 'cards_beneficios' && <>
+          <Carousel responsive={responsive} autoPlay={false} infinite={true} autoPlaySpeed={3000} showDots={true}>
+            <Item>
+              <Card1 />
             </Item>
             <Item>
-              <Accede />
+              <Card2 />
             </Item>
             <Item>
-              <Compra />
+              <Card3 />
             </Item>
             <Item>
-              <Acumula />
+              <Card4 />
+            </Item>
+            <Item>
+              <Card5 />
+            </Item>
+            <Item>
+              <Card6 />
             </Item>
           </Carousel>
         </>
@@ -71,8 +89,8 @@ const Cards = props => {
 }
 
 const Title = props => {
-  return <div className="row">
-    <div className="col-12 text-center pb-5">
+  return <div className="row textrow">
+    <div className="col-12 pb-5">
       <h2 className="h2">{props.children}</h2>
     </div>
   </div>

@@ -58,13 +58,28 @@ section {
   padding-bottom: 15px !important;
 }
 
+.carrousel-mobile div {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.carrousel-mobile h3 {
+  font-size: 1.25rem;
+  line-height: 1.687rem;
+  font-weight: 600;
+}
+.carrousel-mobile p {
+  font-size: 1rem;
+  line-height: 1.6rem;
+}
+
 @media (min-width: 1200px) {
   .h2 {
     line-height: 2.75rem;
   }
 }
 .section-3 {
-  background: linear-gradient(0deg, #90DAB3 5%, #ffffff 80%);
+  background: #ffffff;
   position: relative;
   text-align: center;
 }
@@ -103,7 +118,7 @@ section {
 }
 @media (min-width: 1200px) {
   .section-3 {
-    background: linear-gradient(0deg, #90DAB3 5%, #ffffff 80%);
+    background: #ffffff 80%;
     position: relative;
     text-align: start;
   }
@@ -126,7 +141,7 @@ section {
 }
 @media (min-width: 1440px) {
   .section-3 {
-    background: linear-gradient(0deg, #90DAB3 5%, #ffffff 80%);
+    background: #ffffff 80%;
     position: relative;
     text-align: start;
   }
@@ -145,7 +160,7 @@ section {
   }
 }
 .section-4 {
-  background: linear-gradient(90deg, #c3edfd 5%, #ffffff 70%);
+  background: rgba(77, 205, 111, 0.15);
   position: relative;
 }
 .section-4 .h2 {
@@ -228,7 +243,7 @@ section {
   }
 }
 .section-5 {
-  background-color: white;
+  background-color: #F9F9F9;
   color: #4d4d4d;
   padding: 57px 0px;
 }
@@ -249,9 +264,22 @@ section {
   align-items: center;
 }
 
-.h2 {
+.qs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.section5 .h2 {
   padding-bottom: 30px;
   font-size: 2rem;
+  text-align: center;
+}
+
+.section5 .p {
+  padding: 0px 15px;
+  text-align: center;
 }
 
 .title {
@@ -262,6 +290,7 @@ section {
 .section-5 .accordion-body {
   padding: 0;
   padding-top: 10px;
+  background-color: #F9F9F9;
 }
 
 @media (min-width: 1200px) {
@@ -271,6 +300,22 @@ section {
 }
 .desktopBreadcrumbs {
   display: none;
+}
+
+.textrow {
+  text-align: center;
+}
+
+.card-groud-n3 .card {
+  align-items: flex-start !important;
+}
+
+.seccion6 {
+  background-color: #E6F3F0;
+}
+
+.seccion7 {
+  background: #FFFFFF;
 }
 
 .icon-party {
@@ -337,19 +382,16 @@ section {
   transform: translateX(-50%);
 }
 
+.conhero {
+  padding: 0px 16px !important;
+}
+
 .breadcrumbs {
   background: #efebeb !important;
 }
 
-.colorTitle1 {
+.text-white {
   color: #ffffff;
-}
-
-.colorTitle2 {
-  color: #018765;
-}
-
-.text-gray {
   padding-right: 0px !important;
   font-size: 2.2rem;
   line-height: 2.75rem;
@@ -377,7 +419,7 @@ section {
     left: auto;
     transform: none;
   }
-  .hero-home .text-gray {
+  .hero-home .text-white {
     width: 750px;
   }
 }
@@ -414,7 +456,7 @@ section {
     height: 430px;
     background: url("/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-certificado-deposito-desktop-031124-01@2x.webp") no-repeat center center;
   }
-  .hero-home .text-gray {
+  .hero-home .text-white {
     width: 510px;
   }
   .hero-home:before {
@@ -441,7 +483,7 @@ section {
     height: 450px;
     background: url("/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-certificado-deposito-desktop-031124-01@2x.webp") no-repeat center center;
   }
-  .hero-home .text-gray {
+  .hero-home .text-white {
     width: 550px;
   }
   .hero-home:before {
@@ -451,7 +493,7 @@ section {
     right: 0px;
     transform: none;
   }
-  .text-gray {
+  .text-white {
     padding-right: 0px !important;
     font-size: 2.4rem;
     line-height: 2.75rem;
@@ -506,7 +548,7 @@ section {
 }
 
 .react-multi-carousel-list {
-  padding-bottom: 75px;
+  padding-bottom: 50px;
 }
 
 @media (min-width: 992px) {
@@ -624,6 +666,14 @@ section {
 }
 .card .card-footer {
   --bs-card-cap-padding-y: 0;
+  border-top: none !important;
+}
+
+.cardcenter .cc {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  text-align: left !important;
 }
 
 .card-groud-n3 {
@@ -632,14 +682,14 @@ section {
 }
 .card-groud-n3 .card {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
   width: auto;
   height: 275px;
   padding-bottom: 40px;
 }
 .card-groud-n3 .card .card-body {
-  text-align: center;
+  text-align: left;
   width: 100%;
   height: auto;
 }
@@ -687,7 +737,7 @@ section {
     height: 280px;
   }
   .card-groud-n3 .card .card-body {
-    text-align: center;
+    text-align: left;
     width: 100%;
   }
   .card-groud-n3 .card .card-img {
@@ -709,7 +759,7 @@ section {
     height: 280px;
   }
   .card-groud-n3 .card .card-body {
-    text-align: center;
+    text-align: left;
     width: 100%;
   }
   .card-groud-n3 .card .card-img {
@@ -813,4 +863,46 @@ section {
   .breadcrumbs {
     padding-left: 11rem; /* Padding solo para versiones desktop */
   }
+}
+.icon-n1,
+.icon-n2,
+.icon-n3,
+.icon-n4,
+.icon-n5,
+.icon-n6 {
+  width: 98px;
+  height: 94px;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-n1 {
+  background-image: url("/imagenes/iconos/tarjetas-debito/icono_BNT.svg");
+  background-size: 98px 90px;
+}
+
+.icon-n2 {
+  background-image: url("/imagenes/iconos/tarjetas-debito/icono_Creditos.svg");
+  background-size: 91px 82px;
+}
+
+.icon-n3 {
+  background-image: url("/imagenes/iconos/tarjetas-debito/icono_Interes.svg");
+  background-size: 88px 92px;
+}
+
+.icon-n4 {
+  background-image: url("/imagenes/iconos/tarjetas-debito/icono_Moneda.svg");
+  background-size: 92px 94px;
+}
+
+.icon-n5 {
+  background-image: url("/imagenes/iconos/tarjetas-debito/icono_Plazos.svg");
+  background-size: 92px 94px;
+}
+
+.icon-n6 {
+  background-image: url("/imagenes/iconos/tarjetas-debito/icono_Tasa.svg");
+  background-size: 92px 94px;
 }

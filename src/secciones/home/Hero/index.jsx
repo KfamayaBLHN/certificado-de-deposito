@@ -6,8 +6,8 @@ const Banner = () => {
 
   return (
     <Hero className="hero-home" site_url={site_url}>
-      <h1 className="text-gray">
-      <span className="colorTitle1">Transforma tus ahorros con tu Certificado de Depósito</span>
+      <h1 className="text-white">
+      <span>Transforma tus ahorros con tu Certificado de Depósito</span>
       </h1>
       <div className="d-none d-md-block">
         <p className="h4 text-white pt-1 fw-normal">

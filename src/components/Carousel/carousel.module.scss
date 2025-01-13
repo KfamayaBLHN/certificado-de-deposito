@@ -23,12 +23,14 @@
 .react-multiple-carousel__arrow {
     position: absolute;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.5);
-    border: 2px solid #4D4D4D;
+    background: #ffffff00;  
+    border: 2px solid #4D4D4D; 
     height: 34px !important;
     width: 34px !important;
     min-width: 0;
     min-height: 0;
+    top: 50%;  
+    transform: translateY(-50%);   
 }
 
 .react-multiple-carousel__arrow:hover{
@@ -37,13 +39,15 @@
 }
 
 .react-multiple-carousel__arrow--right{
-    transform: translateY(-74%);
-    right: 15%;
+    right: 3%!important;  
+    top: calc(84% + 32px);   
+    transform: translateY(-50%); 
 }
 
 .react-multiple-carousel__arrow--left{
-    transform: translateY(68%);
-    left: 15%;
+    left: 3%!important;   
+    top: calc(84% + 32px);   
+    transform: translateY(-50%); 
 }
 
 .react-multiple-carousel__arrow--right::before,
@@ -53,7 +57,7 @@
     content: '';
     background: url('./carouselArrow.svg') no-repeat center center;
     background-size: 11px 16px;
-    top: 100%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 0;
@@ -65,6 +69,7 @@
 }
 
 @media screen and (min-width: 992px){
+    
     .custom-dot-list-style,
     .react-multiple-carousel__arrow--left,
     .react-multiple-carousel__arrow--right {
@@ -78,7 +83,7 @@
         top: 0;
         bottom: 0;
         margin: auto;
-        transform: translate(0, 0);
+        transform: translate(0, 70%);
     }
 
     .desktopDotList{
@@ -107,14 +112,24 @@
     }
 }
 
-@media screen and (min-width: 1350px){
-    .desktopLeftArrow {
-        left: auto;
-        margin-left: -95px;
+@media screen and (max-width: 991px) {
+    .react-multiple-carousel__arrow--right{
+        right: 13%!important;  
     }
 
-    .desktopRightArrow {
-        right: auto;
-        margin-left: 75em;
+    .react-multiple-carousel__arrow--left{
+        left: 13%!important;   
     }
+
+    .custom-dot-list-style {
+        margin-top: 0;}
+}.react-multi-carousel-list {
+    display: flex;
+    align-items: center;
+    overflow: none; 
+    position: relative;
 }
+
+
+ 
+

@@ -32,14 +32,16 @@
   }
 }
 
+.conhero {
+  padding: 0px 16px !important;
+}
+
 .breadcrumbs {
   background: #efebeb !important;
 }
 
-.colorTitle1 { color: #ffffff; }
-.colorTitle2 { color: #018765; }
-
-.text-gray {
+.text-white {
+  color: #ffffff;
   padding-right: 0px !important;
   font-size: 2.2rem;
   line-height: 2.75rem;
@@ -66,7 +68,7 @@
       transform: none;
     }
 
-    .text-gray {
+    .text-white {
       width: 750px;
     }
   }
@@ -106,7 +108,7 @@
       '/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-certificado-deposito-desktop-031124-01@2x.webp' //imagen
     );
 
-    .text-gray {
+    .text-white {
       width: 510px;
     }
 
@@ -136,7 +138,7 @@
       '/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-certificado-deposito-desktop-031124-01@2x.webp' //imagen
     );
 
-    .text-gray {
+    .text-white {
       width: 550px;
     }
 
@@ -148,7 +150,7 @@
       transform: none;
     }
   }
-  .text-gray {
+  .text-white {
     padding-right: 0px !important;
     font-size: 2.4rem;
     line-height: 2.75rem;

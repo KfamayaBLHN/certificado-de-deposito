@@ -1,0 +1,26 @@
+@mixin icon_maker ($icon_name) {
+  .#{$icon_name} {
+    background-image: url('/imagenes/iconos/#{$icon_name}.svg');
+  }
+}
+
+
+.icon-n1,
+.icon-n2,
+.icon-n3,
+.icon-n4,
+.icon-n5,
+.icon-n6{
+  width: 98px;
+  height: 94px;
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon-n1 { background-image: url('/imagenes/iconos/tarjetas-debito/icono_BNT.svg'); background-size: 98px 90px;}
+.icon-n2 { background-image: url('/imagenes/iconos/tarjetas-debito/icono_Creditos.svg'); background-size: 91px 82px;}
+.icon-n3 { background-image: url('/imagenes/iconos/tarjetas-debito/icono_Interes.svg'); background-size: 88px 92px;}
+.icon-n4 { background-image: url('/imagenes/iconos/tarjetas-debito/icono_Moneda.svg'); background-size: 92px 94px;}
+.icon-n5 { background-image: url('/imagenes/iconos/tarjetas-debito/icono_Plazos.svg'); background-size: 92px 94px;}
+.icon-n6 { background-image: url('/imagenes/iconos/tarjetas-debito/icono_Tasa.svg'); background-size: 92px 94px;}

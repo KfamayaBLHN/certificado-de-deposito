@@ -1,38 +1,56 @@
 {
-  "ObtenSvg": {
-    "src": "/imagenes/icons/ICN_01_Obten_TD_CAA_BLHN.svg",
-    "alt": "Obtén tu Tarjeta de Débito internacional",
-    "w": 157,
-    "h": 157
+  "beneficio1": {
+    "src": "/imagenes/iconos/tarjetas-debito/icono_BNT.svg",
+    "alt": "Utiliza Bancanet",
+    "w": 120,
+    "h": 120
   },
-  "AperturaSvg": {
-    "src": "/imagenes/icons/ICN_02_Apertura_Cuenta_CAA_BLHN.svg",
-    "alt": "Apertura de Cuenta de Ahorro",
-    "w": 157,
-    "h": 157
+  "beneficio2": {
+    "src": "/imagenes/iconos/tarjetas-debito/icono_Creditos.svg",
+    "alt": "",
+    "w": 120,
+    "h": 120
   },
-  "DisfrutaSvg": {
-    "src": "/imagenes/icons/ICN_03_Disfruta_Tasa_CAA_BLHN.svg",
-    "alt": "Disfruta un interés competitivo",
-    "w": 157,
-    "h": 157
+  "beneficio3": {
+    "src": "/imagenes/iconos/tarjetas-debito/icono_Interes.svg",
+    "alt": "",
+    "w": 120,
+    "h": 120
   },
-  "AccedeSvg": {
-    "src": "/imagenes/icons/ICN_04_Accede_BNT_CAA_BLHN.svg",
-    "alt": "Accede a Bancanet para gestiones",
-    "w": 157,
-    "h": 157
+  "beneficio4": {
+    "src": "/imagenes/iconos/tarjetas-debito/icono_Moneda.svg",
+    "alt": "",
+    "w": 120,
+    "h": 120
   },
-  "CompraSvg": {
-    "src": "/imagenes/icons/ICN_05_Compra_Online_CAA_BLHN.svg",
-    "alt": "Compra de divisas en línea",
-    "w": 157,
-    "h": 157
+  "beneficio5": {
+    "src": "/imagenes/iconos/tarjetas-debito/icono_Plazos.svg",
+    "alt": "",
+    "w": 120,
+    "h": 120
   },
-  "AcumulaSvg": {
-    "src": "/imagenes/icons/ICN_06_Acumula_Points_CAA_BLHN.svg",
-    "alt": "Acumula puntos por compras",
-    "w": 157,
-    "h": 157
+  "beneficio6": {
+    "src": "/imagenes/iconos/tarjetas-debito/icono_Tasa.svg",
+    "alt": "",
+    "w": 120,
+    "h": 120
+  },
+  "chicoBlog": {
+    "src": "/imagenes/icons/img-secondary-section06-blog-cuentas-ahorro-chl-cards-blhn-dic-01@2x.webp",
+    "alt": "",
+    "w": 350,
+    "h": 211
+  },
+  "chicaBlog": {
+    "src": "/imagenes/icons/img-secondary-section06-blog-tarjeta-credito-chl-cards-blhn-dic-01@2x.webp",
+    "alt": "",
+    "w": 328,
+    "h": 211
+  },
+  "chicaBlog2": {
+    "src": "/imagenes/icons/img-secondary-section06-blog-prestamos-personales-chl-cards-blhn-dic-01@2x.webp",
+    "alt": "",
+    "w": 328,
+    "h": 211
   }
 }

@@ -1,4 +1,3 @@
-
 const CardImage = props => {
   return <img {...props} className="card-img" />
 }
@@ -16,7 +15,7 @@ const CardFooter = props => {
 }
 
 const Card = props => {
-  const _cardClass = `card h-400 ${typeof props.name !== "undefined" ? props.name : ''}`;
+  const _cardClass = `card h-100 ${typeof props.name !== "undefined" ? props.name : ''}`;
   return <div className={_cardClass}>
     {props.children}
   </div>
