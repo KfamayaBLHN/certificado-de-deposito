@@ -72,7 +72,7 @@ const CONTENTS = [
     ),
     content: (
       <>
-        desde 3, 6, 9 y 12 meses
+        Desde 3, 6, 9 y 12 meses
       </>
     ),
   },

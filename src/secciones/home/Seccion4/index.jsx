@@ -15,10 +15,10 @@ export default props => {
   return <section className="section-4 pt-3" id="requisitos">
     <article className="container-fluid">
       <div className="row align-items-end align-items-xl-center flex-column-reverse flex-md-row">
-        <div className="col-12 col-md-5 text-center imag">
+        <div className="col-12 col-md-6 text-center imag">
           <Images className="img-section-4" alt="Joven revisando los requisitos desde su celular para la apertura de su Cuenta Avanza" source={sources} name="ChicoSeccion4"/>
         </div>
-        <div className="col-12 col-md-5">
+        <div className="col-12 col-md-5 p-0">
           <h2 className="h2">Esto necesitarás para la apertura de tu Depósito a plazo fijo</h2>
           <ul className="list-unstyled list-bullet-check mb-0">
             <li>DNI</li>
