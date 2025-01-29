@@ -12,10 +12,10 @@ export default props => {
       "h": 550
     }
   }
-  return <section className="section-3 pt-3">
+  return <section className="section-3">
     <article className="container-fluid">
       <div className="row align-items-center align-items-xl-center flex-md-row">
-        <div className="col-12 col-md-5 p-3">
+        <div className="col-12 col-md-5 pb-3 ps-3 pe-3">
           <h2 className="h2">¡Hazlo fácil! Llena el formulario y recibe asesoría</h2>
           <p className="pb-5 pt-1 p">
             Completa el formulario en minutos y recibe atención preferencial de uno de nuestros ejecutivos

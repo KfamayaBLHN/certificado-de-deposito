@@ -7,7 +7,7 @@ export default props => {
       <div className="row qs">
         <div className="col-12 text-md-center">
           <h2 className="h2 pb-1">Resuelve tus dudas</h2>
-          <p className="p pb-5 pt-2">Todo lo que necesitas saber sobre tu certificado</p>
+          <p className="p pb-5 pt-1">Todo lo que necesitas saber sobre tu certificado</p>
         </div>
       </div>
         

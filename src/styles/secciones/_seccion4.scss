@@ -1,9 +1,10 @@
 .section-4 {
-  background: rgba(77, 205, 111, 0.15);
+  background: #E5F8EA !important;
   position: relative;
+  padding: 40px 0px;
   .h2 {
     font-size: 2rem;
-    line-height: 2.77rem;
+    line-height: 2.5rem;
   }
   .imag{
     display: flex;
@@ -28,10 +29,9 @@
 
 @media (min-width: $size-md ) {
   .section-4 {
-    padding-top: 30px !important;
     .h2 {
       font-size: 2rem;
-      line-height: 45px;
+      line-height: 2.5rem;
     }
   }
   // list
@@ -56,29 +56,32 @@
 }
 
 @media (min-width: $size-md ) {
-  .section-4 .btn-container {
-    bottom: auto;
-    left: auto;
-    transform: none;
-    width: auto;
-    position: relative;
-  }
-  .section-4 .btn-cta {
-    position: relative;
-  }
-}
-
-@media (min-width: $size-md ) {
-  .section-4 .img-section-4 {
-    max-width: 550px;
-    margin: 0 auto;
-    position: relative;
+  .section-4 {
+    .btn-container {
+      bottom: auto;
+      left: auto;
+      transform: none;
+      width: auto;
+      position: relative;
+    }
+    .btn-cta {
+      position: relative;
+    }
+    .img-section-4 {
+      max-width: 550px;
+      margin: 0 auto;
+      position: relative;
+    }
   }
 }
 
 @media (min-width: $size-xxl ) {
+  .section-4{
+    padding-top: 10px;
+    padding-bottom: 25px;
+  }
   .h2 {
-    line-height: 1.6rem;
+    line-height: 2.5rem;
   }
   .imag{
     display: flex;

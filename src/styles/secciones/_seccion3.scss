@@ -5,9 +5,10 @@
   background:  #ffffff;
   position: relative;
   text-align: center;
+  padding-top: 40px;
   .h2 {
     font-size: 2rem;
-    line-height: 2.77rem;
+    line-height: 2.5rem !important;
   }
   .p {
     line-height: 1.6rem;
@@ -30,10 +31,10 @@
 
 @media (min-width: $size-md ) {
   .section-3 {
-    padding-top: 30px !important;
+    padding-top: 10px !important;
     .h2 {
       font-size: 2rem;
-      line-height: 45px;
+      line-height: 2.5rem;
     }
   }
 
@@ -49,7 +50,7 @@
     text-align: start;
     .h2 {
       font-size: 2rem;
-      line-height: 2.77rem;
+      line-height: 2.5rem;
     }
     .imag{
       display: flex;
@@ -74,7 +75,7 @@
     text-align: start;
     .h2 {
       font-size: 2rem;
-      line-height: 2.77rem;
+      line-height: 2.5rem;
     }
   }
   .imag{

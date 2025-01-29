@@ -104,7 +104,7 @@ export default function MainComponent() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
   return (
-    <section className="pt-5 pb-10 pt-md-10 pb-md-10 px-3" style={{ backgroundColor: '#ffffff' }}>
+    <section className="pt-5 pb-7 pt-md-6 pb-md-6 px-3" style={{ backgroundColor: '#ffffff' }}>
       <article className="container-fluid px-0">
         <div className="row pb-7">
           <div className="col-12">
