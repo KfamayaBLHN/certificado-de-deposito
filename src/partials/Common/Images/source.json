@@ -1,55 +1,55 @@
 {
   "beneficio1": {
     "src": "/imagenes/iconos/tarjetas-debito/icono_BNT.svg",
-    "alt": "Utiliza Bancanet",
+    "alt": "Utiliza Bancanet para revisar gestiones",
     "w": 120,
     "h": 120
   },
   "beneficio2": {
     "src": "/imagenes/iconos/tarjetas-debito/icono_Creditos.svg",
-    "alt": "",
+    "alt": "Accede a créditos para obtener más beneficios",
     "w": 120,
     "h": 120
   },
   "beneficio3": {
     "src": "/imagenes/iconos/tarjetas-debito/icono_Interes.svg",
-    "alt": "",
+    "alt": "Intereses pagados directamente a la cuenta",
     "w": 120,
     "h": 120
   },
   "beneficio4": {
     "src": "/imagenes/iconos/tarjetas-debito/icono_Moneda.svg",
-    "alt": "",
+    "alt": "Disponible en la moneda que deseas",
     "w": 120,
     "h": 120
   },
   "beneficio5": {
     "src": "/imagenes/iconos/tarjetas-debito/icono_Plazos.svg",
-    "alt": "",
+    "alt": "Plazos adaptados a tu necesidad",
     "w": 120,
     "h": 120
   },
   "beneficio6": {
     "src": "/imagenes/iconos/tarjetas-debito/icono_Tasa.svg",
-    "alt": "",
+    "alt": "Disfruta de tasa de interés preferencial",
     "w": 120,
     "h": 120
   },
   "chicoBlog": {
     "src": "/imagenes/icons/img-secondary-section06-blog-cuentas-ahorro-chl-cards-blhn-dic-01@2x.webp",
-    "alt": "",
+    "alt": "Joven sonriendo mientras busca en internet la Cuenta 100% Digital de LAFISE",
     "w": 350,
     "h": 211
   },
   "chicaBlog": {
     "src": "/imagenes/icons/img-secondary-section06-blog-tarjeta-credito-chl-cards-blhn-dic-01@2x.webp",
-    "alt": "",
+    "alt": "Mujer feliz haciendo sus compras con la Tarjeta de Crédito LAFISE",
     "w": 328,
     "h": 211
   },
   "chicaBlog2": {
     "src": "/imagenes/icons/img-secondary-section06-blog-prestamos-personales-chl-cards-blhn-dic-01@2x.webp",
-    "alt": "",
+    "alt": "Mujer empresaria visualizando su próximo Préstamo Personal para mejorar su negocio",
     "w": 328,
     "h": 211
   }

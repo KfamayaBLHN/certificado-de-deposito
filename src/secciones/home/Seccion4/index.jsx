@@ -6,7 +6,7 @@ export default props => {
     ChicoSeccion4: {
       "src": "/imagenes/pics/img-secondary-requisitos-blhn-section3-desktop-01@2x.webp",
       "src_2x": "/imagenes/pics/img-secondary-requisitos-blhn-section3-mobile-01@2x.webp",
-      "alt": "Joven revisando los requisitos desde su celular para la apertura de su Cuenta Avanza",
+      "alt": "Mujer alegre revisando los requisitos para aperturar su depósito a plazo fijo",
       "title": "",
       "w": 500,
       "h": 500

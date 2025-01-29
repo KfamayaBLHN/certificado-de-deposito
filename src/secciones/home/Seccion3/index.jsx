@@ -6,7 +6,7 @@ export default props => {
     tarjeta2: {
       "src": "/imagenes/footage-4/img-secondary-section04-asesoria-personalizada-card-chl-desktop-blhn-nov-01@2x.webp",
       "src_2x": "/imagenes/footage-4/img-secondary-section04-asesoria-personalizada-card-chl-mobile-blhn-nov-01@2x.webp",
-      "alt": "Pareja utilizando Tarjeta de Débito Virtual para compras en línea",
+      "alt": "Ejecutivos listos para que recibas atención preferencial",
       "title": "",
       "w": 550,
       "h": 550
