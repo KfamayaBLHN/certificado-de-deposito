@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import ChicoBlog from './ChicoBlog';
@@ -13,7 +14,7 @@ import Card6 from './beneficios/card6';
 const Relacionados = (props) => {
   const backgroundColor = "bg-gray-1";
   return (
-    <section className={`py-5 overflow-hidden `}>
+    <section className={`py-5 overflow-hidden`}>
       <div className="container-fluid">{props.children}</div>
     </section>
   );
@@ -34,20 +35,51 @@ const responsive = {
   }
 };
 
-const Item = props => {
-  return <div className="carousel-container h-100">
-    <div className="h-100 px-2">
-      {props.children}
+const Item = (props) => {
+  return (
+    <div className="carousel-container h-100">
+      <div className="h-100 px-2">
+        {props.children}
+      </div>
     </div>
-  </div>
-}
+  );
+};
 
-const Cards = props => {
-  return <div className="card-groud-n3">
-    <article >
-      {
-        props.type == 'cards' && <>
-          <Carousel responsive={responsive} autoPlay={false} infinite={true} autoPlaySpeed={3000} showDots={true}>
+const Cards = (props) => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkIfMobile = () => {
+      if (window.innerWidth <= 576) {
+        setIsMobile(true);
+      } else {
+        setIsMobile(false);
+      }
+    };
+
+    // Verificar al cargar y cada vez que la ventana cambie de tamaño
+    checkIfMobile();
+    window.addEventListener('resize', checkIfMobile);
+
+    // Limpiar el listener cuando el componente se desmonte
+    return () => {
+      window.removeEventListener('resize', checkIfMobile);
+    };
+  }, []);
+
+  return (
+    <div className="card-groud-n3">
+      <article>
+        {props.type === 'cards' && (
+          <Carousel
+            responsive={responsive}
+            autoPlay={false}
+            infinite={false}
+            autoPlaySpeed={10000}
+            showDots={isMobile} 
+            hasArrows={true}
+            isDesktopCarousel={false}
+          >
             <Item>
               <ChicoBlog />
             </Item>
@@ -58,11 +90,12 @@ const Cards = props => {
               <ChicaBlog2 />
             </Item>
           </Carousel>
-        </>
-      }
-      {
-        props.type == 'cards_beneficios' && <>
-          <Carousel responsive={responsive} autoPlay={false} infinite={true} autoPlaySpeed={3000} showDots={true}>
+        )}
+
+        {props.type === 'cards_beneficios' && (
+          <Carousel
+          responsive={responsive} autoPlay={false} infinite={true} autoPlaySpeed={3000} showDots={true}
+          >
             <Item>
               <Card1 />
             </Item>
@@ -82,21 +115,23 @@ const Cards = props => {
               <Card6 />
             </Item>
           </Carousel>
-        </>
-      }
-    </article>
-  </div>
-}
-
-const Title = props => {
-  return <div className="row textrow">
-    <div className="col-12 pb-2">
-      <h2 className="h2">{props.children}</h2>
+        )}
+      </article>
     </div>
-  </div>
-}
+  );
+};
+
+const Title = (props) => {
+  return (
+    <div className="row textrow">
+      <div className="col-12 pb-2">
+        <h2 className="h2">{props.children}</h2>
+      </div>
+    </div>
+  );
+};
 
 Relacionados.Title = Title;
 Relacionados.Cards = Cards;
 
-export default Relacionados
+export default Relacionados;

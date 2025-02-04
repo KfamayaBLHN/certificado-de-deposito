@@ -11,7 +11,7 @@ const Banner = () => {
       </h1>
       <div className="d-none d-md-block">
         <p className="h4 text-white pt-1 fw-normal">
-        Garantiza tu bienestar a largo plazo, con una tasa de interés&nbsp;<br/>
+        Garantiza tu bienestar a largo plazo, con una tasa de interés
         que te ayude a hacer crecer tu dinero
         </p>
         <a href='https://www.lafise.com/blh' className="btn btn-light btn-lg mt-3">¡Obtenlo ya!</a>
