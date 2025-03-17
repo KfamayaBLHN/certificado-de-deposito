@@ -6,8 +6,13 @@
   background-size: auto 100%;
 }
 .bg-gradient-primary {
-  background: -webkit-gradient(linear,left top,left bottom,from(#33BA75),to(#018765));
-  background: linear-gradient(180deg,#33BA75 0%,#018765 100%);
+  background: -webkit-gradient(linear,left top,left bottom,from(#31B773),to(#00583C));
+  background: linear-gradient(180deg,#31B773 0%,#00583C 100%);
+}
+
+.text-w {
+  color: #FFF;
+  font-size: 1rem;
 }
 
 @media (min-height: 728px) {
@@ -15,3 +20,4 @@
     min-height: calc(100vh - 80px - 108px);
   }
 }
+

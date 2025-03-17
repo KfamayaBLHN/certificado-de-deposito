@@ -51,9 +51,9 @@ export default function Solicitar() {
               <div className="layout-fullwidth text-center text-white">
                 <i className="icon icon-party" role="presentation"></i>
                 <h1 className="pb-5">¡Todo listo{nombre == '' ? ''  :  ` ${nombre}`}!</h1>
-                <p className="fw-semibold pb-4">Ya estamos procesando tu solicitud.</p>
-                <p className="fw-semibold">Te contactaremos {correo !== '' ? `al correo ${correo}` : ''} cuando todo esté listo.</p>
-                <a className="link tc-white mt-5 d-block text-white" href="https://www.lafise.com/blh/">Volver al sitio web</a>
+                <p className="pb-4">Ya estamos procesando tu solicitud.</p>
+                <p className="">Te contactaremos {correo !== '' ? `al correo ${correo}` : ''} cuando todo esté listo.</p>
+                <a className="link tc-white mt-5 d-block text-w" href="https://www.lafise.com/blh/">Volver al sitio web</a>
               </div>
             </div>
           </div>
