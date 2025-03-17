@@ -15,6 +15,11 @@
   font-size: 1rem;
 }
 
+.text-w:hover {
+  color: #220a7b;
+  text-decoration: none;
+}
+
 @media (min-height: 728px) {
   .bg-gradient-primary {
     min-height: calc(100vh - 80px - 108px);
