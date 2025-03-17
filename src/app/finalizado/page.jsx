@@ -25,15 +25,15 @@ export default function Solicitar() {
   return (
     <>
       <Head>
-        <title>Solicitud de Cuenta Avanza recibida</title>
-        <meta name="description" content="Cuenta Avanza - Banco LAFISE - Honduras" />
+        <title>Obtén tu Certificado de depósito - LAFISE Honduras</title>
+        <meta name="description" content="Invierte de manera segura con tu Certificado de Depósito, disfruta de tasas preferenciales, flexibilidad de plazos y seguridad para tus ahorros." />
         <meta name="robots" content="index"></meta>
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="Solicitud de Cuenta Avanza recibida" />
-        <meta property="og:description" content="Cuenta Avanza - Banco LAFISE - Honduras" />
+        <meta property="og:title" content="Obtén tu Certificado de depósito - LAFISE Honduras" />
+        <meta property="og:description" content="Invierte de manera segura con tu Certificado de Depósito, disfruta de tasas preferenciales, flexibilidad de plazos y seguridad para tus ahorros." />
         <meta property="og:image" itemProp="image" content="https://www.lafise.com/cdn/imagenes/default/og-default.png" />
         <meta property="og:site_name" content="Banco LAFISE" />
-        <link rel="canonical" href="https://www.lafise.com/blh/banca-personal/cuenta-avanza/finalizado/" /> 
+        <link rel="canonical" href="https://www.lafise.com/blh/banca-personal/certificado-deposito/finalizado/" /> 
       </Head>
 
       <LandingHeader config={{
@@ -51,9 +51,9 @@ export default function Solicitar() {
               <div className="layout-fullwidth text-center text-white">
                 <i className="icon icon-party" role="presentation"></i>
                 <h1 className="pb-5">¡Todo listo{nombre == '' ? ''  :  ` ${nombre}`}!</h1>
-                <p className="fw-semibold pb-4">Ya estamos procesando tu solicitud.</p>
-                <p className="fw-semibold">Te contactaremos {correo !== '' ? `al correo ${correo}` : ''} cuando todo esté listo.</p>
-                <a className="link tc-white mt-5 d-block text-white" href="https://www.lafise.com/blh/">Volver al sitio web</a>
+                <p className="pb-4">Ya estamos procesando tu solicitud.</p>
+                <p className="">Te contactaremos {correo !== '' ? `al correo ${correo}` : ''} cuando todo esté listo.</p>
+                <a className="link tc-white mt-5 d-block text-w" href="https://www.lafise.com/blh/">Volver al sitio web</a>
               </div>
             </div>
           </div>

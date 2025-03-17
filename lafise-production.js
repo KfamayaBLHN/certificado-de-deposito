@@ -10,7 +10,7 @@ if ( process.env.NODE_ENV == 'production') {
 
 const options = {
   files: [
-    `C:/Users/kfamaya/Documents/frontend/landing_pages/certificado-de-deposito/out/_next/static/css/*.css`,
+    `C:/Users/dvlopez/Desktop/FrontEnd/landing_certificado_deposito/certificado-de-deposito/out/_next/static/css/*.css`,
   ],
   from: /([/])imagenes/g,
   to: `${_assetPrefix}imagenes`,
