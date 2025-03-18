@@ -38,18 +38,21 @@
   "chicoBlog": {
     "src": "/imagenes/icons/img-secondary-section06-blog-cuentas-ahorro-chl-cards-blhn-dic-01@2x.webp",
     "alt": "Joven sonriendo mientras busca en internet la Cuenta 100% Digital de LAFISE",
+    "title": "Joven sonriendo mientras busca en internet la Cuenta 100% Digital de LAFISE",
     "w": 350,
     "h": 211
   },
   "chicaBlog": {
     "src": "/imagenes/icons/img-secondary-section06-blog-tarjeta-credito-chl-cards-blhn-dic-01@2x.webp",
     "alt": "Mujer feliz haciendo sus compras con la Tarjeta de Crédito LAFISE",
+    "title": "Mujer feliz haciendo sus compras con la Tarjeta de Crédito LAFISE",
     "w": 328,
     "h": 211
   },
   "chicaBlog2": {
     "src": "/imagenes/icons/img-secondary-section06-blog-prestamos-personales-chl-cards-blhn-dic-01@2x.webp",
     "alt": "Mujer empresaria visualizando su próximo Préstamo Personal para mejorar su negocio",
+    "title": "Mujer empresaria visualizando su próximo Préstamo Personal para mejorar su negocio",
     "w": 328,
     "h": 211
   }

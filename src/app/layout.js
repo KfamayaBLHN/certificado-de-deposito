@@ -40,7 +40,7 @@ export default function RootLayout(props) {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossOrigin={"anonymous"} />
         <link rel="stylesheet" href="https://www.lafise.com/cdn/esmeralda/lafise-esmeralda-ds.v2.0.css" />
         <link rel="shortcut icon" href="https://www.lafise.com/cdn/imagenes/default/favicon.ico" type="image/x-icon" />
-        <link rel="canonical" href="https://www.lafise.com/blh/banca-personal/certificado-de-deposito//index.html" />
+        <link rel="canonical" href="https://www.lafise.com/blh/banca-personal/certificado-de-deposito/" />
 
         {
           process.env.NODE_ENV !== 'development' && <>

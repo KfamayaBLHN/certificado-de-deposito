@@ -1,9 +1,10 @@
 // home
 .hero-home {
-  height: 677px;
+  height: 675px;
+  padding-top: 10px;
   background-color: #018765 !important;
   @include hero-basic(100%, //width
-    310px, //heigt
+    308px, //heigt
     '/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-certificado-deposito-desktop-031124-01@1x.webp', //imagen
     20px, //marginTop
     280px, //width 
@@ -56,12 +57,11 @@
     text-align: center;
     height: auto;
     @include hero-basic-md(
-    479px, //width
+    779px, //width
     437px, //heigth
     137px, //right
-    80px //marginTop
+    20px //marginTop
     );
-    //background: #E6F7FD;
     
     &:before {
       left: auto;

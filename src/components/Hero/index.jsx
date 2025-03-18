@@ -1,5 +1,5 @@
 const Hero = props => {
-  const _class = `hero py-5 py-lg-0${ typeof props.className !== "undefined" ? ` ${props.className}` : ''}`
+  const _class = `hero pt-5 py-lg-0${ typeof props.className !== "undefined" ? ` ${props.className}` : ''}`
   return (
     <section className={_class}>
       <div className="container-fluid conhero">

@@ -7,7 +7,7 @@ export default props => {
       "src": "/imagenes/pics/img-secondary-requisitos-blhn-section3-desktop-01@2x.webp",
       "src_2x": "/imagenes/pics/img-secondary-requisitos-blhn-section3-mobile-01@2x.webp",
       "alt": "Mujer alegre revisando los requisitos para aperturar su depósito a plazo fijo",
-      "title": "",
+      "title": "Mujer alegre revisando los requisitos para aperturar su depósito a plazo fijo",
       "w": 500,
       "h": 500
     }
