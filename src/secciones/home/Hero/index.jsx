@@ -14,13 +14,13 @@ const Banner = () => {
         Garantiza tu bienestar a largo plazo, con una tasa de interés
         que te ayude a hacer crecer tu dinero
         </p>
-        <a href='https://www.lafise.com/blh' className="btn btn-light btn-lg mt-3">¡Obtenlo ya!</a>
+        <a href='https://www.lafise.com/blh/banca-personal/certificado-deposito/solicitud-en-linea' className="btn btn-light btn-lg mt-3">¡Obtenlo ya!</a>
       </div>
       <div className="d-sm-block d-md-none">
         <p className="h4 text-white pt-1 fw-normal">
         Garantiza tu bienestar a largo plazo, con una tasa de interés que te ayude a hacer crecer tu dinero  
         </p>
-        <a href='https://www.lafise.com/blh' className="btn btn-light btn-lg mt-3">¡Obtenlo ya!</a>
+        <a href='https://www.lafise.com/blh/banca-personal/certificado-deposito/solicitud-en-linea' className="btn btn-light btn-lg mt-3">¡Obtenlo ya!</a>
       </div>
     </Hero>
   );

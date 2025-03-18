@@ -20,7 +20,7 @@ export default props => {
           <p className="pb-5 pt-1 p">
             Completa el formulario en minutos y recibe atención preferencial de uno de nuestros ejecutivos
           </p>
-          <a href='https://www.lafise.com/blh' className="btnsection3">¡Quiero mi asesoría!</a>
+          <a href='https://www.lafise.com/blh/banca-personal/certificado-deposito/solicitud-en-linea' className="btnsection3">¡Quiero mi asesoría!</a>
         </div>
         <div className="col-12 col-md-6 text-center imag">
           <Images className="img-section-3 pb-0" alt="Tarjeta" source={sources} name="tarjeta2"/>
