@@ -1,98 +1,123 @@
 .section-4 {
-  background: #E5F8EA !important;
+  background: #E5F8EA;
   position: relative;
-  padding: 40px 0px;
+  padding: 5vw 0; // Padding responsivo
+
   .h2 {
-    font-size: 2rem;
-    line-height: 2.7rem !important;
+    font-size: 1.8rem; // Tamaño de fuente base
+    line-height: 2.2rem;
+    text-align: center; // Centrar el título en pantallas pequeñas
+    //margin-bottom: 1rem; // Espacio inferior
   }
-  .imag{
+
+  .imag {
     display: flex;
     justify-content: center;
   }
-  .img-section-4{
-    max-width: 380px;
+
+  .img-section-4 {
+    max-width: 100%; // Imagen flexible
     width: 100%;
     height: auto;
   }
-}
 
-// list
-.section-4 .list-bullet-check {
-  padding-top: 12px;
-  padding-bottom: 28px;
-  li {
-    padding-bottom: 8px;
-    font-size: 1rem;
+  .list-bullet-check {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+
+    li {
+      padding-bottom: 0.5rem;
+      font-size: 1rem;
+    }
+  }
+
+  // Pseudo-elemento (revisar su uso)
+  &::after {
+    content: ""; // Necesario para que se muestre
+    display: none; // Ocultar por defecto
+    position: absolute;
+    // ... (Estilos que tenías, pero considera si son necesarios y responsivos)
+    // @include wh(223px, 153px);
+    // top: 185px !important;
+    // right: -140px;
   }
 }
 
-@media (min-width: $size-md ) {
+// Media Queries
+
+@media (min-width: $size-sm) {
   .section-4 {
+    padding: 4vw 0; // Ajustar padding para pantallas pequeñas
+
+    .h2 {
+      font-size: 1.5rem;
+      line-height: 1.8rem;
+    }
+
+    .list-bullet-check {
+      li {
+        font-size: 0.9rem; // Ajustar tamaño de la lista
+      }
+    }
+  }
+}
+
+@media (min-width: $size-md) {
+  .section-4 {
+    padding: 3vw 0;
+
     .h2 {
       font-size: 2rem;
       line-height: 2.5rem;
+      text-align: left; // Alinear a la izquierda en pantallas medianas
+      //margin-bottom: 0.5rem;
     }
-  }
-  // list
-  .section-4 {
-    ul {
-      font-size: 20px;
-      font-weight: 400;
-    }
-  }
 
-  .section-4 {
-    &:after{
-      @include wh(223px, 153px);
-      top: 185px !important;
-      right: -140px;
-    }
-  }
-}
-
-.section-4 .btn-cta {
-  width: 250px;
-}
-
-@media (min-width: $size-md ) {
-  .section-4 {
-    .btn-container {
-      bottom: auto;
-      left: auto;
-      transform: none;
-      width: auto;
-      position: relative;
-    }
-    .btn-cta {
-      position: relative;
-    }
     .img-section-4 {
       max-width: 550px;
-      margin: 0 auto;
-      position: relative;
+    }
+
+    .list-bullet-check {
+      li {
+        font-size: 1rem;
+      }
+    }
+
+    &::after {
+      display: block; // Mostrar el pseudo-elemento en pantallas medianas
     }
   }
 }
 
-@media (min-width: $size-xxl ) {
-  .section-4{
-    padding-top: 10px;
-    padding-bottom: 25px;
-  }
-  .h2 {
-    line-height: 2.5rem;
-  }
-  .imag{
-    display: flex;
-    justify-content: center;
-  }
-  .img-section-4{
-    padding: 20px 0px 0px 0px;
-    width: 550px;
-    height: auto;
+@media (min-width: $size-lg) {
+  .section-4 {
+    padding: 2vw 0; // Ajustar padding para pantallas grandes
+
+    .h2 {
+      font-size: 2.2rem;
+      line-height: 2.7rem;
+    }
+
+    .list-bullet-check {
+      li {
+        font-size: 1.1rem;
+      }
+    }
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi) {}
+@media (min-width: $size-xxl) {
+  .section-4 {
+    padding: 10px 0; // Volver a píxeles si es necesario para pantallas muy grandes
+
+    .h2 {
+      font-size: 2.5rem;
+      line-height: 3rem;
+    }
+
+    .img-section-4 {
+      max-width: 550px;
+      padding: 20px 0 0 0;
+    }
+  }
+}

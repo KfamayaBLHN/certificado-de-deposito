@@ -1,169 +1,110 @@
-// home
+// home - sin mixins - sin !important
+
 .hero-home {
-  height: 675px;
-  padding-top: 10px;
-  background-color: #018765 !important;
-  @include hero-basic(100%, //width
-    308px, //heigt
-    '/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-certificado-deposito-desktop-031124-01@1x.webp', //imagen
-    20px, //marginTop
-    280px, //width 
-    280px, //height
-    '', //fondo
-    0px, //bottom
-    'Hombre sosteniendo celular solicitando su Cuenta Ahorro Avanza de manera fácil y sencilla'
-  );
+  height: 700px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #018765;
   z-index: 1000;
-  padding-bottom: 0 !important;
   overflow: hidden;
   position: relative;
-
-  &:after {
-    position: relative;
-    background-size: auto 100%;
-    display: block;
-    content: '';
-  }
-
-  &:before {
-    background-size: cover;
-    content: '';
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
-
-.conhero {
-  padding: 0px 16px !important;
-}
-
-.breadcrumbs {
-  background: #efebeb !important;
+  align-items: center;
+  text-align: center;
 }
 
 .text-white {
   color: #ffffff;
-  padding: 0px 10px;
-  font-size: 2.2rem;
-  line-height: 2.75rem;
+  padding: 0;
+  font-size: 1.7rem;
+  line-height: 2.2rem;
+  margin-bottom: 1rem;
+  grid-row: 1; // Text in first row
 }
+
 .h4 {
-  font-size: 1.2rem !important;
-  line-height: 1.75rem !important;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.5rem;
+  grid-row: 1; // Text in first row
 }
 
-@media (min-width: $size-md ) {
+.btn-light {
+  background-color: #fff;
+  color: #018765;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  grid-row: 1; // Button in first row
+}
+
+.hero-home::before {
+  content: '';
+  position: absolute;
+  top: auto; // Position at the bottom
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  z-index: 10000;
+  opacity: 1;
+  background-image: url('/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-certificado-deposito-desktop-031124-01@1x.webp');
+  grid-row: 2; // Image in second row
+}
+
+@media (min-width: 768px) {
   .hero-home {
+    height: 700px;
     text-align: center;
-    height: auto;
-    @include hero-basic-md(
-    779px, //width
-    437px, //heigth
-    137px, //right
-    20px //marginTop
-    );
-    
-    &:before {
-      left: auto;
-      transform: none;
-    }
-
-    .text-white {
-      width: 750px;
-      font-size: 2.5rem;
-      line-height: 2.75rem;
-    }
-  }
-}
-
-@media (max-width: 992px) {
-  .hero-home {
-    text-align: center;
-  }
-}  
-
-@media (min-width: $size-lg ) {
-  .hero-home {
-    height: 420px;
-    @include hero-basic-xl(
-      603px, //width
-      500px, //heigth
-      '/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-certificado-deposito-desktop-031124-01@2x.webp' //imagen
-    );
-
-    &:before {
-      background-size: cover;
-      bottom: 0;
-      left: auto;
-      right: 30px;
-      transform: none;
-    }
-  }
-}
-
-@media (min-width: $size-xl ) {
-  .hero-home {
-      height: 420px;
-    @include hero-basic-xl(
-      692px, //width
-      430px, //heigth
-      '/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-certificado-deposito-desktop-031124-01@2x.webp' //imagen
-    );
-
-    .text-white {
-      width: 510px;
-      padding: 0px;
-      font-size: 2.5rem;
-      line-height: 2.75rem;
-    }
-
-    &:before {
-      background-size: cover;
-      bottom: 0%;
-      left: auto;
-      right: -10px;
-      transform: none;
-      background-size: cover;
-      position: absolute;
-    }
   }
 
-  .hero {
-    height: 420px;
+  .text-container {
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
   }
-}
 
-@media (min-width: $size-xxl ) {
-  .hero-home {
-      height: 420px;
-      padding-right: 20px;
-    @include hero-basic-xxl(
-      722px, //width
-      450px, //heigth
-      '/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-certificado-deposito-desktop-031124-01@2x.webp' //imagen
-    );
-
-    .text-white {
-      width: 550px;
-      padding: 0px;
-      font-size: 2.5rem;
-      line-height: 2.75rem;
-    }
-
-    &:before {
-      background-size: cover;
-      bottom: 0;
-      left: auto;
-      right: 0px;
-      transform: none;
-    }
+  .hero-home::before {
+    content: '';
+    position: absolute;
+    top: auto; // Position at the bottom
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    z-index: 10000;
+    opacity: 1;
+    background-image: url('/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-certificado-deposito-desktop-031124-01@1x.webp');
+    grid-row: 2; // Image in second row
   }
+
   .text-white {
-    padding-right: 0px !important;
-    padding: 0px !important;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     line-height: 2.75rem;
   }
+
+  .h4 {
+    font-size: 1.2rem;
+    line-height: 1.75rem;
+  }
 }
 
+@media (min-width: 1200px) {
+  .hero-home::before {
+    background-image: url('/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-certificado-deposito-desktop-031124-01@2x.webp'); // Imagen for desktop
+  }
+}
 
+@media (min-width: 1440px) {
+  .hero-home::before {
+    background-image: url('/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-certificado-deposito-desktop-031124-01@2x.webp'); // Imagen for desktop
+  }
+}
