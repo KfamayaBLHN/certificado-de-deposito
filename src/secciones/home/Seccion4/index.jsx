@@ -12,7 +12,7 @@ export default props => {
       "h": 500
     }
   }
-  return <section className="section-4" id="requisitos" style={{background: "#ffffff"}}>
+  return <section className="section-4" id="requisitos">
     <article className="container-fluid">
       <div className="row align-items-end align-items-xl-center flex-column-reverse flex-md-row">
         <div className="col-12 col-md-6 text-center imag">

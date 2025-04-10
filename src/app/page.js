@@ -13,7 +13,7 @@ import Seccion7 from '@/secciones/home/seccion7';
 export default function Home() {
   const env = process.env.NODE_ENV;
   const [isMounted, setIsMounted] = useState(false);
-  const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
+  const isMobile = useMediaQuery({ query: '(max-width: 1199px)' });
 
   useEffect(() => {
     setIsMounted(true);

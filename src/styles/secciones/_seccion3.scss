@@ -1,96 +1,118 @@
-
-//New -----------------------------------------------
-
 .section-3 {
-  background:  #ffffff;
+  background: #ffffff;
   position: relative;
   text-align: center;
-  padding-top: 40px;
+  padding-top: 5vw; // Padding responsivo
+
   .h2 {
-    font-size: 2rem;
-    line-height: 2.7rem !important;
+    font-size: 1.8rem; // Tamaño de fuente base
+    line-height: 2.2rem;
+    margin-bottom: 1rem;
   }
+
   .p {
     line-height: 1.6rem;
+    margin-bottom: 1.5rem;
   }
-  .imag{
+
+  .imag {
     display: flex;
     justify-content: center;
   }
-  .img-section-3{
-    padding: 15px 0px;
-    width: 430px;
+
+  .img-section-3 {
+    max-width: 100%; // Imagen flexible
+    padding: 1rem 0;
     height: auto;
   }
+
+  .btnsection3 {
+    // Estilos base para el botón
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    font-size: 1rem;
+    // font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #018765;
+    color: #ffffff;
+    border-radius: 0.25rem;
+    transition: background-color 0.15s ease-in-out;
+
+    &:hover {
+      background-color: #05634c; // Un color de ejemplo al pasar el mouse
+    }
+  }
 }
 
-.img-section-3{
-  padding: 15px 0px;
-}
+// Media Queries
 
-
-@media (min-width: $size-md ) {
+@media (min-width: $size-sm) {
   .section-3 {
-    padding-top: 10px !important;
+    padding-top: 4vw;
+
+    .h2 {
+      font-size: 1.5rem;
+      line-height: 1.8rem;
+    }
+
+    .p {
+      font-size: 0.9rem; // Ajustar tamaño del párrafo
+    }
+
+    .btnsection3 {
+      font-size: 0.9rem; // Ajustar tamaño del botón
+      padding: 0.5rem 1rem;
+    }
+  }
+}
+
+@media (min-width: $size-md) {
+  .section-3 {
+    padding-top: 3vw;
+
     .h2 {
       font-size: 2rem;
       line-height: 2.5rem;
     }
 
-    .img-section-3{
-      padding: 30px 0px;
-      width: 400px;
-      height: auto;
-      margin: 20px 0px 0px 20px;
+    .img-section-3 {
+      padding: 2rem 0;
+      max-width: 80%; // Ajustar el ancho máximo
+    }
+
+    .btnsection3 {
+      font-size: 1rem;
+      padding: 0.75rem 1.25rem;
     }
   }
 }
 
-@media (min-width: $size-xl ) {
+@media (min-width: $size-lg) {
   .section-3 {
-    background: #ffffff 80%;
-    position: relative;
-    text-align: start;
-    .h2 {
-      font-size: 2rem;
-      line-height: 2.5rem;
-    }
-    .imag{
-      display: flex;
-      justify-content: center;
-    }
-    .img-section-3{
-      padding: 20px 0px;
-      width: 550px;
-      height: auto;
-    }
-  }
-
-  .img-section-3{
-    padding: 20px 0px;
+    text-align: start; // Alinear el texto a la izquierda
   }
 }
 
-@media (min-width: $size-xxl ) {
+@media (min-width: $size-xl) {
   .section-3 {
-    background: #ffffff 80%;
-    position: relative;
-    text-align: start;
-    .h2 {
-      font-size: 2rem;
-      line-height: 2.5rem;
+    .img-section-3 {
+      max-width: 550px;
     }
-  }
-  .imag{
-    display: flex;
-    justify-content: center;
-  }
-  .img-section-3{
-    padding: 20px 0px;
-    width: 550px;
-    height: auto;
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi) {}
+@media (min-width: $size-xxl) {
+  .section-3 {
+    padding-top: 2rem; // Volver a píxeles si es necesario
+
+    .h2 {
+      font-size: 2.2rem;
+      line-height: 2.7rem;
+    }
+
+    .p {
+      font-size: 1.1rem;
+    }
+  }
+}
