@@ -1,39 +1,44 @@
 import React from "react";
-import Hero from "@/components/Hero";
 
 const Banner = () => {
   const site_url = process.env.NEXT_PUBLIC_SITE_URL;
 
   return (
-    <Hero className="hero-home" site_url={site_url}>
-      <div className="hero-content">
-        <div className="LeftColumn">
-          <h1 className="text-white">
-            <span>Transforma tus ahorros con tu Certificado de Depósito</span>
-          </h1>
-          <div className="">
-            <p className="h4 text-white pt-1 fw-normal">
-              Garantiza tu bienestar a largo plazo, con una tasa de interés
-              que te ayude a hacer crecer tu dinero
+    <section className="hero-section bg-success">
+      <div className="container h-100">
+        <div className="row h-100">
+          {/* Texto a la izquierda */}
+          <div className="col-12 col-lg-6 d-flex flex-column justify-content-center text-center text-lg-start">
+            <h1 className="banner-title text-white">
+              Transforma tus ahorros con tu Certificado de Depósito
+            </h1>
+
+            <p className="banner-subheading text-white">
+              Garantiza tu bienestar a largo plazo, con una tasa de interés que te ayude a hacer crecer tu dinero
             </p>
+            <a
+              href="https://www.lafise.com/blh/banca-personal/certificado-deposito/solicitud-en-linea"
+              className="btn btn-light btn-lg btn-cta"
+            >
+              ¡Obtenlo ya!
+            </a>
           </div>
-          <div>
-          <a href='https://www.lafise.com/blh/banca-personal/certificado-deposito/solicitud-en-linea' className="btn btn-light btn-lg mt-3">¡Obtenlo ya!</a>
+
+          {/* Imagen a la derecha */}
+          <div className="col-12 col-lg-6 p-0">
+            <div className="h-100 d-flex align-items-end justify-content-center">
+              <img
+                src="/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-certificado-deposito-desktop-031124-01@1x.webp"
+
+                alt="Certificado de Depósito"
+                className="img-fluid banner-image"
+                style={{ maxHeight: '100%', objectFit: 'contain' }}
+              />
+            </div>
           </div>
-        </div>
-        <div className="RightColumn">
-          <img src='/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-certificado-deposito-desktop-031124-01@1x.webp' />
         </div>
       </div>
-
-      {/* <div className="d-sm-block d-md-none">
-          <p className="h4 text-white pt-1 fw-normal">
-            Garantiza tu bienestar a largo plazo, con una tasa de interés que te ayude a hacer crecer tu dinero
-          </p>
-          <a href='https://www.lafise.com/blh/banca-personal/certificado-deposito/solicitud-en-linea' className="btn btn-light btn-lg mt-3">¡Obtenlo ya!</a>
-        </div> */}
-
-    </Hero>
+    </section>
   );
 };
 
