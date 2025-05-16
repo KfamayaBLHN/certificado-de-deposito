@@ -12,7 +12,6 @@ const Banner = () => {
             <h1 className="banner-title text-white">
               Transforma tus ahorros con tu Certificado de Depósito
             </h1>
-
             <p className="banner-subheading text-white">
               Garantiza tu bienestar a largo plazo, con una tasa de interés que te ayude a hacer crecer tu dinero
             </p>

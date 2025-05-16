@@ -1,22 +1,131 @@
 .breadcrumbs {
-    padding-left: 0; /* Por defecto, no padding */
+  background-color: #f4f4f4;
+  padding: 1rem;
+  height: 50px;
+  top: 617px;
+  @media (min-width: 568px) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  @media (min-width: 1200px) {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
+
+.breadcrumbs-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  gap: 0.5rem;
+}
+
+.breadcrumb-item {
+  color: #333;
+  font-weight: 500;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.breadcrumb-item2 {
+  color: #333;
+  font-weight: 500;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.active1 {
+  color: #018765;
+  font-weight: 500;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb-link {
+  color: #333;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.breadcrumb-separator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #888;
+  line-height: 1; // ✅ evita desajuste vertical
+  height: 100%; // ✅ ocupa la misma altura que el texto
+}
+.breadcrumb-current {
+  color: #018765;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.breadcrumb-item2 {
+  position: relative;
+  padding-right: 1.5rem; // espacio para el separador
+  margin-right: 0.5rem;
+
+  &::after {
+    content: "›";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #888;
+    line-height: 1;
+    display: inline-block;
+  }
+
+  &:last-child {
+    padding-right: 0;
+    margin-right: 0;
+
+    &::after {
+      content: none;
+    }
   }
   
-/* Mobile first approach */
-.breadcrumbs {
-  padding-left: 1rem; /* Mobile default */
 }
 
-/* Tablet */
-@media (min-width: 568px) {
-  .breadcrumbs {
-    padding-left: 2rem;
+@media (min-width: 360px) {
+  .breadcrumbs-list {
+    gap: 0.25rem; // menos separación
   }
-}
 
-/* Desktop */
-@media (min-width: 1200px) {
-  .breadcrumbs {
-    padding-left: 6rem;
+  .breadcrumb-item,
+  .breadcrumb-item2,
+  .breadcrumb-link,
+  .breadcrumb-current,
+  .active1
+  .breadcrumb-separator {
+    font-size: 0.75rem !important;  // reduce tamaño
+  }
+
+  .breadcrumb-item2 {
+    padding-right: 1rem;
+    margin-right: 0.25rem;
+
+    &::after {
+      font-size: 1rem;
+      margin-left: 0.25rem;
+    }
   }
 }

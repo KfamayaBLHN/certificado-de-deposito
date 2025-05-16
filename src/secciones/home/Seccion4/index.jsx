@@ -12,22 +12,28 @@ export default props => {
       "h": 500
     }
   }
-  return <section className="section-4" id="requisitos">
-    <article className="container-fluid">
-      <div className="row align-items-end align-items-xl-center flex-column-reverse flex-md-row">
-        <div className="col-12 col-md-6 text-center imag">
-          <Images className="img-section-4" alt="Joven revisando los requisitos desde su celular para la apertura de su Cuenta Avanza" source={sources} name="ChicoSeccion4"/>
+  return <section className="section-4 d-flex flex-column " id="requisitos">
+    <article className="container-fluid d-flex flex-column flex-grow-1">
+      <div className="row flex-column-reverse flex-md-row flex-grow-1 justify-content-between">
+
+        <div className="col-12 col-md-6 text-center imag d-flex justify-content-center">
+          <Images className="img-section-4 align-self-end" source={sources} name="ChicoSeccion4" />
         </div>
-        <div className="col-12 col-md-5 p-0">
-          <h2 className="h2">Esto necesitarás para la apertura de tu Depósito a plazo fijo</h2>
-          <ul className="list-unstyled list-bullet-check mb-0">
+
+        <div className="col-12 col-md-5 ps-3 pe-3 pt-5 d-flex flex-column justify-content-start">
+          <h2 className="h2 pt-3">Esto necesitarás para la apertura de tu Depósito a plazo fijo</h2>
+          <ul className="list-unstyled list-bullet-check mb-0 pb-5">
             <li>DNI</li>
             <li>RTN</li>
             <li>Pasaporte o carnet de residencia, en caso de ser extranjero</li>
             <li>Apertura desde L 10,000</li>
           </ul>
         </div>
+
+
+
       </div>
     </article>
   </section>
+
 }

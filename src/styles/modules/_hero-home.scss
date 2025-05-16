@@ -11,6 +11,7 @@
 .hero-section .row {
   height: 100%;
 }
+
 .btn-cta {
   font-size: 1rem;
   padding: 0.5rem 1.5rem;
@@ -18,8 +19,18 @@
   width: 250px;
   margin: 1rem 0 0;
   text-align: center;
-  align-self: center;
 }
+
+/* Alineación del botón para desktop */
+@media (min-width: 992px) {
+  .btn-cta {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    align-self: center;
+  }
+}
+
 .banner-image-container {
   display: flex;
   flex-direction: column;
@@ -42,24 +53,51 @@
 /* ======================== */
 
 .banner-title {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 40px;
+  line-height: 54px;
   font-weight: 700;
-  margin-bottom: 1rem;
+  letter-spacing: -2;
   text-align: center;
+  
 }
 
 .banner-subheading {
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 14px;
+  line-height: 19px;
   font-weight: 400;
   max-width: 90%;
   margin: 0 auto 1.5rem auto;
   text-align: center;
 }
 
-/* Small (≥576px) */
-@media (min-width: 576px) {
+/* x-Small (≥360px) */
+@media (min-width: 360px) {
+  
+  .hero-section .container,
+  .hero-section .row {
+    height: 100%;
+    // min-height: 100vh;
+  }
+  .banner-title {
+    padding-top:8.75vw;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+  }
+
+  .banner-subheading {
+    padding-top: 5%;
+    font-size: 1.0rem;
+    line-height: 1.6rem;
+  }
+
+  .btn-cta {
+    align-self:center;
+    width: 174px;
+  }
+}
+
+/*Small (≥577px) */
+@media (min-width: 577px) {
   .banner-title {
     font-size: 2.4rem;
     line-height: 2.4rem;
@@ -69,10 +107,13 @@
     font-size: 1.39rem;
     line-height: 1.6rem;
   }
+
   .btn-cta {
-    align-self: center;
+    align-self:center;
   }
 }
+
+
 
 /* Medium (768px - 991px) */
 @media (min-width: 768px) and (max-width: 991px) {
@@ -89,6 +130,8 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  
 }
 
 /* Large (992px - 1399px) */
@@ -105,11 +148,11 @@
     text-align: left;
     margin-left: 0px;
   }
-  .btn-align-left {
-    display: inline-block;
+  .btn-cta {
     margin-left: 0;
     margin-right: 0;
     text-align: left;
+    align-self: flex-start;
   }
 }
 
@@ -124,16 +167,13 @@
   .banner-subheading {
     font-size: 1.25rem;
     text-align: left;
-    margin-left: -0;
+    margin-left: 0;
   }
-
-  .btn-align-left {
-    font-size: 1rem;
-    padding: 0.5rem 1.5rem;
-    display: inline-block;
-    width: auto;
-    margin: 1rem 0 0;
-    text-align: center;
+  .btn-cta {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+    align-self: flex-start;
   }
 }
 

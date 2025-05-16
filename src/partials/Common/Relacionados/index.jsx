@@ -80,16 +80,19 @@ const Cards = (props) => {
             hasArrows={true}
             isDesktopCarousel={false}
           >
-            <Item>
-              <ChicoBlog />
-            </Item>
+            
             <Item>
               <ChicaBlog />
             </Item>
             <Item>
               <ChicaBlog2 />
             </Item>
+            <Item>
+              <ChicoBlog />
+            </Item>
+            
           </Carousel>
+          
         )}
 
         {props.type === 'cards_beneficios' && (

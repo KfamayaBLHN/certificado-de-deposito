@@ -2,16 +2,20 @@
   background: #ffffff;
   position: relative;
   text-align: center;
-  padding-top: 5vw; // Padding responsivo
-
+  padding-top: 3.75vw; // Padding responsivo
+  padding-bottom: 3.75vw;
   .h2 {
-    font-size: 1.8rem; // Tamaño de fuente base
-    line-height: 2.2rem;
+    font-size: 2rem !important; // Tamaño de fuente base
+    line-height: 44px;
+    font-weight: 700;
+    letter-spacing: -2;
     margin-bottom: 1rem;
   }
 
   .p {
-    line-height: 1.6rem;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
     margin-bottom: 1.5rem;
   }
 
