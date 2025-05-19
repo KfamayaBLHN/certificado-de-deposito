@@ -28,7 +28,7 @@
 .breadcrumb-item {
   color: #333;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.2rem;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -45,13 +45,13 @@
 .active1 {
   color: #018765;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.2rem;
   display: flex;
   align-items: center;
 }
 
 .breadcrumb-link {
-  color: #333;
+  color: #333 !important;
   text-decoration: none;
 
   &:hover {
@@ -64,7 +64,7 @@
   align-items: center;
   justify-content: center;
   margin: 0 0.5rem;
-  font-size: 2rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: #888;
   line-height: 1; // ✅ evita desajuste vertical
@@ -78,7 +78,7 @@
 
 .breadcrumb-item2 {
   position: relative;
-  padding-right: 1.5rem; // espacio para el separador
+  padding-right: 1rem; // espacio para el separador
   margin-right: 0.5rem;
 
   &::after {
@@ -105,7 +105,7 @@
   
 }
 
-@media (min-width: 360px) {
+@media (max-width: 360px) {
   .breadcrumbs-list {
     gap: 0.25rem; // menos separación
   }
@@ -116,7 +116,7 @@
   .breadcrumb-current,
   .active1
   .breadcrumb-separator {
-    font-size: 0.75rem !important;  // reduce tamaño
+    font-size: 0.65rem !important;  // reduce tamaño
   }
 
   .breadcrumb-item2 {

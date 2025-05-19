@@ -126,9 +126,9 @@ const Cards = (props) => {
 
 const Title = (props) => {
   return (
-    <div className="row textrow">
-      <div className="col-12 pb-2">
-        <h2 className="h2">{props.children}</h2>
+    <div className="row textrow  justify-content-center">
+      <div className="col-12 pb-2 ">
+        <h2 className="h2 text-center">{props.children}</h2>
       </div>
     </div>
   );
