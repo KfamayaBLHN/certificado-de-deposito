@@ -5,12 +5,9 @@ const Banner = () => {
 
   useEffect(() => {
     const updateImage = () => {
-      if (window.matchMedia("(max-width: 359px)").matches) {
+       if (window.matchMedia("(max-width: 577px)").matches) {
         setImageSrc("/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-certificado-deposito-mobile-031124-01@1x.webp");
-      }else if (window.matchMedia("(max-width: 576px)").matches) {
-        setImageSrc("/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-certificado-deposito-mobile-031124-01@1x.webp");
-      } else if (window.matchMedia("(max-width: 991px)").matches) {
-      }else if (window.matchMedia("(max-width: 767px)").matches) {
+      } else if (window.matchMedia("(max-width: 768px)").matches) {
         setImageSrc("/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-Certificado-deposito-tablet-190525-01-2x.webp");
       } else if (window.matchMedia("(max-width: 991px)").matches) {
         setImageSrc("/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-certificado-deposito-desktop-031124-01@2x.webp");
@@ -48,7 +45,7 @@ const Banner = () => {
           {/* Imagen a la derecha */}
           <div className="col-12 col-lg-6 p-0">
             <div className="h-100 d-flex align-items-end justify-content-center">
-            <img
+              <img
                 src={imageSrc}
                 alt="Certificado de Depósito"
                 className="img-fluid banner-image"
