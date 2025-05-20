@@ -35,8 +35,8 @@ export default props => {
           </div>
 
           {/* Texto */}
-          <div className="col-12 col-md-5 d-flex flex-column justify-content-start ps-3 pe-3 pt-5">
-            <h2 className="h2 pt-3">
+          <div className="col-12 col-md-5 d-flex flex-column justify-content-start ps-2 pe-3 pt-5">
+            <h2 className="h2">
               Esto necesitarás para la apertura de tu Depósito a plazo fijo
             </h2>
             <ul className="list-unstyled list-bullet-check mb-0 pb-5">

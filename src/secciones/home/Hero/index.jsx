@@ -1,8 +1,28 @@
-import React from "react";
-
+import React, { useEffect, useState } from "react";
 const Banner = () => {
   const site_url = process.env.NEXT_PUBLIC_SITE_URL;
+  const [imageSrc, setImageSrc] = useState('/imagenes/banner-lg.webp');
 
+  useEffect(() => {
+    const updateImage = () => {
+      if (window.matchMedia("(max-width: 359px)").matches) {
+        setImageSrc("/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-certificado-deposito-mobile-031124-01@1x.webp");
+      }else if (window.matchMedia("(max-width: 576px)").matches) {
+        setImageSrc("/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-certificado-deposito-mobile-031124-01@1x.webp");
+      } else if (window.matchMedia("(max-width: 991px)").matches) {
+      }else if (window.matchMedia("(max-width: 767px)").matches) {
+        setImageSrc("/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-Certificado-deposito-tablet-190525-01-2x.webp");
+      } else if (window.matchMedia("(max-width: 991px)").matches) {
+        setImageSrc("/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-certificado-deposito-desktop-031124-01@2x.webp");
+      } else {
+        setImageSrc("/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-certificado-deposito-desktop-031124-01@2x.webp");
+      }
+    };
+
+    updateImage();
+    window.addEventListener("resize", updateImage);
+    return () => window.removeEventListener("resize", updateImage);
+  }, []);
   return (
     <section className="hero-section bg-success " >
       <div className="container h-100">
@@ -20,16 +40,16 @@ const Banner = () => {
               className="btn btn-light btn-lg btn-cta h-600p"
             >
               ¡Obtenlo ya!
-              
+
             </a>
-            
+
           </div>
 
           {/* Imagen a la derecha */}
           <div className="col-12 col-lg-6 p-0">
             <div className="h-100 d-flex align-items-end justify-content-center">
             <img
-                src="/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-certificado-deposito-desktop-031124-01@2x.webp"
+                src={imageSrc}
                 alt="Certificado de Depósito"
                 className="img-fluid banner-image"
                 style={{ maxHeight: '100%', objectFit: 'contain' }}
