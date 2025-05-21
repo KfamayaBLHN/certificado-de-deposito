@@ -15,12 +15,12 @@ export default props => {
   };
 
   return (
-    <section className="section-3" style={{ paddingTop: "72px", paddingBottom: "0px" }}>
+    <section className="section-3" style={{ paddingTop: "48px", paddingBottom: "0" }}>
       <article className="container-fluid">
-        <div className="row align-items-end align-items-xl-center flex-md-row">
+        <div className="row align-items-end align-items-xl-start flex-md-row">
           {/* Columna de texto */}
           <div className="col-12 col-md-5 pb-9 ps-0 pe-0">
-            <h2 className="h2">¡Hazlo fácil! Llena el formulario y recibe asesoría</h2>
+            <h2 className="h2"> ¡Hazlo fácil! Llena el formulario ya</h2>
             <p className="pb-5 pt-1 p">
               Completa el formulario en minutos y recibe atención preferencial de uno de nuestros ejecutivos
             </p>
@@ -33,7 +33,7 @@ export default props => {
           </div>
 
           {/* Columna de imagen */}
-          <div className="col-12 col-md-6 p-0  d-flex justify-content-center align-items-end" style={{paddingBottom: "0px"}}>
+          <div className="col-12 col-md-6 pb-0  d-flex justify-content-center align-items-end" style={{paddingBottom: "0px"}}>
             <Images
               className="img-section-3"
               alt="Tarjeta"

@@ -68,6 +68,7 @@
       font-size: 0.9rem; // Ajustar tamaño del botón
       padding: 0.5rem 1rem;
     }
+    
   }
 }
 
@@ -85,14 +86,17 @@
       font-size: 16px;
     }
     .img-section-3 {
-      padding: 0rem 0;
-      max-width: 80%; // Ajustar el ancho máximo
+      
+      max-width: 106%; // Ajustar el ancho máximo
     }
 
     .btnsection3 {
       font-size: 1rem;
       padding: 0.75rem 1.25rem;
     }
+   .image{
+     
+   }
   }
 }
 
@@ -110,17 +114,36 @@
   }
 }
 
-@media (min-width: $size-xxl) {
+@media (min-width: 1400px) {
   .section-3 {
-    padding-top: 2rem; // Volver a píxeles si es necesario
-
+    padding-top: 72px !important; // Volver a píxeles si es necesario
+    max-height: 384px;
     .h2 {
-      font-size: 2.2rem;
+      font-size: 28px;
       line-height: 2.7rem;
+      width: 320px;
+      margin-top: 0 !important;
+      padding-top: 0 !important;
     }
 
     .p {
       font-size: 1.1rem;
+    }
+    .img-section-3 {
+      max-width: 550px;
+     
+    }
+
+    .btnsection3 {
+      font-size: 16px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+    .img-section-3 {
+      max-width: 84%; // Ajustar el ancho máximo
+      
     }
   }
 }
