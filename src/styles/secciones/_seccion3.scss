@@ -16,7 +16,6 @@
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
-    margin-bottom: rem;
   }
 
   .imag {
@@ -114,20 +113,63 @@
   }
 }
 
+@media (min-width: 992px) and (max-width: 1399px) {
+  .section-3 {
+    padding-top: 72px !important; // Volver a píxeles si es necesario
+    max-height: 384px;
+    .h2 {
+      font-size: 32px;
+      line-height: 44px;
+      width: 320px;
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+      padding-top: 0 !important;
+      padding-bottom: 16px !important;
+    }
+
+    .p {
+      font-size: 16px;
+      line-height: 22px;
+      padding-bottom: 32px !important;
+    }
+    .img-section-3 {
+      max-width: 550px;
+     
+    }
+
+    .btnsection3 {
+      font-size: 16px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      padding-right: 40px;
+      padding-left: 40px;
+    }
+    .img-section-3 {
+      max-width: 84%; // Ajustar el ancho máximo
+      
+    }
+  }
+}
+
+
 @media (min-width: 1400px) {
   .section-3 {
     padding-top: 72px !important; // Volver a píxeles si es necesario
     max-height: 384px;
     .h2 {
-      font-size: 28px;
-      line-height: 2.7rem;
+      font-size: 32px;
+      line-height: 44px;
       width: 320px;
       margin-top: 0 !important;
+      margin-bottom: 0 !important;
       padding-top: 0 !important;
+      padding-bottom: 16px !important;
     }
 
     .p {
-      font-size: 1.1rem;
+      font-size: 16px;
+      line-height: 22px;
+      padding-bottom: 32px !important;
     }
     .img-section-3 {
       max-width: 550px;

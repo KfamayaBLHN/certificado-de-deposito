@@ -17,7 +17,7 @@
   padding: 0.5rem 1.5rem;
   display: inline-block;
   width: 250px;
-  
+
   padding-bottom: 72px;
   text-align: center;
 }
@@ -60,7 +60,6 @@
   font-weight: 700;
   letter-spacing: -2;
   text-align: center;
-  
 }
 
 .banner-subheading {
@@ -73,15 +72,15 @@
 }
 
 /* x-Small (≥360px) */
+//576
 @media (min-width: 360px) {
-  
   .hero-section .container,
   .hero-section .row {
     height: 100%;
     // min-height: 100vh;
   }
   .banner-title {
-    padding-top:8.75vw;
+    padding-top: 8.75vw;
     font-size: 1.8rem;
     line-height: 2.5rem;
     padding-left: 47px;
@@ -93,20 +92,18 @@
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
   }
 
   .btn-cta {
-    align-self:center;
+    align-self: center;
     width: 174px;
   }
-
-  
-  
 }
 
 /*Small (≥577px) */
-@media (min-width: 577px) {
+@media (min-width: 577px) and (max-width: 767) {
   .banner-title {
     font-size: 32px;
     line-height: 2.6rem;
@@ -119,25 +116,22 @@
   }
 
   .btn-cta {
-    align-self:center;
+    align-self: center;
   }
-
-  
 }
 
-
-
 /* Medium (768px - 991px) */
-@media (min-width: 768px) and (max-width: 991px) {
-  .h1{
+@media (min-width: 768px) and (max-width: 1199px) {
+  .h1 {
+    padding-top: 47px;
     font-size: 2rem;
     line-height: 44px;
     font-weight: 600;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
   }
-  .p{
-    font-size:32px ;
+  .p {
+    font-size: 32px;
     line-height: 22px;
     font-weight: 400;
     padding-bottom: 0%;
@@ -162,19 +156,18 @@
     font-size: 2.1rem;
     line-height: 2.6rem;
     text-align: left;
-    padding-top: 1rem;
+    padding-top: 16;
     margin-left: 0;
     max-width: 100%;
     padding-left: 40px;
   }
 
   .banner-subheading {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
     text-align: left;
-    margin-top: 1rem;
-    max-width: 100%;
-    padding-left: 40px;
+    margin-left: 47px;
+    padding-top: 16px;
   }
 
   .btn-cta {
@@ -184,8 +177,7 @@
     //padding: 0.6rem 1.2rem;
     // padding-bottom: 17px;
     font-size: 1rem;
-    margin-left:40px;
-    
+    margin-left: 40px;
   }
 
   .banner-image-container,
@@ -196,23 +188,15 @@
     align-items: center;
   }
 
-  .banner-image {
-    width: 100%;
-    max-height: 100%;
-    height: auto;
-    object-fit: contain;
-    align-self: center;
-  }
-
- 
+  
 }
 
-
 /* Large (992px - 1399px) */
-@media (min-width: 992px) and (max-width: 1399px) {
+@media (min-width: 1200px) and (max-width: 1399px) {
+  
   .banner-title {
     font-size: 2.3rem;
-    line-height: 2.8rem;
+    line-height: 2.75rem;
     text-align: left;
     padding-top: 42px;
   }
@@ -230,17 +214,14 @@
     text-align: left;
     align-self: flex-start;
     margin-left: 47px;
-  
   }
- 
-
 }
 
 /* Extra Large (≥1400px) */
 @media (min-width: 1400px) {
   .banner-title {
     font-size: 2.6rem;
-    line-height: 54px;
+    line-height: 2.75rem;
     text-align: left;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -262,9 +243,7 @@
     text-align: left;
     align-self: flex-start;
     margin-left: 47px;
-  
   }
-  
 }
 
 /* ======================== */
