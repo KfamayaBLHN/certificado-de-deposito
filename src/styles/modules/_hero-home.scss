@@ -187,7 +187,14 @@
     justify-content: center;
     align-items: center;
   }
-
+  @media (min-width: 993px){
+    .btn-cta {
+      .p{
+       font-size: 16px; 
+        
+      }
+  }
+}
   
 }
 
