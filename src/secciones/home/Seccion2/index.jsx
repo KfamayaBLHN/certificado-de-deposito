@@ -23,8 +23,8 @@ const CONTENTS = [
     title: "Utiliza Bancanet",
     content: (
       <>
-        Revisa desde tu celular como crecen tus&nbsp;<br/>ahorros
-        
+        Revisa desde tu celular como crecen tus&nbsp;<br />ahorros
+
       </>
     ),
   },
@@ -32,7 +32,7 @@ const CONTENTS = [
     icon: "icon-n4",
     title: (
       <>
-        Disponible en la moneda que<br/> deseas
+        Disponible en la moneda que<br /> deseas
       </>
     ),
     content: (
@@ -45,12 +45,12 @@ const CONTENTS = [
     icon: "icon-n3",
     title: (
       <>
-        Intereses pagados directamente<br/> a tu cuenta
+        Intereses pagados directamente<br /> a tu cuenta
       </>
     ),
     content: (
       <>
-        Cada vez que generas intereses, se suman&nbsp;<br/> a tu saldo
+        Cada vez que generas intereses, se suman&nbsp;<br /> a tu saldo
       </>
     ),
   },
@@ -59,7 +59,7 @@ const CONTENTS = [
     title: "Accede a créditos",
     content: (
       <>
-        Úsalo como garantía para obtener un<br/> Préstamo o Tarjeta de Crédito
+        Úsalo como garantía para obtener un<br /> Préstamo o Tarjeta de Crédito
       </>
     ),
   },
@@ -67,7 +67,7 @@ const CONTENTS = [
     icon: "icon-n5",
     title: (
       <>
-        Plazos adaptados a tus<br/> necesidades
+        Plazos adaptados a tus<br /> necesidades
       </>
     ),
     content: (
@@ -104,19 +104,19 @@ export default function MainComponent() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
   return (
-    <section className="pt-5 pb-7 pt-md-6 pb-md-6 px-3" style={{ backgroundColor: '#ffffff' }}>
+    <section className="seccion7 px-3" style={{ backgroundColor: '#ffffff' }}>
       <article className="container-fluid px-0">
         <div className="row pb-7">
           <div className="col-12">
-          <h2 className="text-center">
-          {headerText}
-        </h2>
+            <h2 className="text-center">
+              {headerText}
+            </h2>
           </div>
         </div>
 
-        <div className="row ps-md-8 ps-0 justify-md-content-center flex-column flex-md-row">
+        <div className="row justify-content-center pt-5">
           {CONTENTS.map((item, index) => (
-            <div key={index} className={`col-12 col-md-${index % 2 === 0 ? "9" : "10"} ps-4 pe-4 col-xl-6 order-${index + 1}`}>
+            <div key={index} className="col-12 col-md-6 col-xl-5 px-3 mb-4">
               <Box icon_name={item.icon}>
                 <Text title={item.title} content={item.content} />
               </Box>
@@ -133,11 +133,11 @@ export default function MainComponent() {
             ¡Quiero mi tarjeta! 
           </a> */}
 
-          
+
         {/* </article></div> */}
       </article>
     </section>
   );
 }
 
- 
+

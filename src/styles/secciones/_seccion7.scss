@@ -1,13 +1,77 @@
-.seccion7 {
-    background: #FFFFFF;
-    padding-top: 72px;
-    padding-bottom: 72px;
-    .h2 { 
-        font-size: 2rem;
-        line-height: 44px;
-        font-weight: 700;
-        letter-spacing: -2;
-        
-        }
+
+
+@media (min-width: 360px) and (max-width: 576px){
+    .seccion7 {
+        background: #FFFFFF;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        .h2 { 
+            font-size: 2rem;
+            line-height: 44px;
+            font-weight: 700;
+            letter-spacing: -2;
+            color: #4d4d4d;
+            
+            }
+    }
 }
 
+@media (min-width: 577px) and (max-width: 767px){
+    .seccion7 {
+        background: #FFFFFF;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        .h2 { 
+            font-size: 2rem;
+            line-height: 44px;
+            font-weight: 700;
+            letter-spacing: -2;
+            
+            }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+    .seccion7 {
+        background: #FFFFFF;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        .h2 { 
+            font-size: 2rem;
+            line-height: 44px;
+            font-weight: 700;
+            letter-spacing: -2;
+            
+            }
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1399px){
+    .seccion7 {
+        background: #FFFFFF;
+        padding-top: 72px;
+        padding-bottom: 72px;
+        .h2 { 
+            font-size: 2rem;
+            line-height: 44px;
+            font-weight: 700;
+            letter-spacing: -2;
+            
+            }
+    }
+}
+
+@media (min-width: 1400px){
+    .seccion7 {
+        background: #FFFFFF;
+        padding-top: 72px;
+        padding-bottom: 72px;
+        .h2 { 
+            font-size: 2rem;
+            line-height: 44px;
+            font-weight: 700;
+            letter-spacing: -2;
+            margin-bottom: 38px;
+         }
+    }
+}

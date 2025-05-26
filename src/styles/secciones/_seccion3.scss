@@ -9,7 +9,7 @@
     line-height: 44px;
     font-weight: 700;
     letter-spacing: -2;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
   }
 
   .p {
@@ -78,11 +78,13 @@
     .h2 {
       font-size: 2rem;
       line-height: 44px;
-      padding-bottom: 16px;
+      padding-bottom: 0px;
     }
     .p {
       padding-top: 0 !important;
       font-size: 16px;
+      margin-bottom: 0px;
+      padding-bottom: 32px !important;
     }
     .img-section-3 {
       
@@ -92,6 +94,9 @@
     .btnsection3 {
       font-size: 1rem;
       padding: 0.75rem 1.25rem;
+    }
+    .divBtn{
+      padding-bottom: 32px;
     }
    .image{
      

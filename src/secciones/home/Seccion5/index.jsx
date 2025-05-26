@@ -5,7 +5,7 @@ export default props => {
   return <section className="section-5">
     <div className="container-fluid">
       <div className="row qs">
-        <div className="col-12 text-md-center">
+        <div className="col-12 ">
           <h2 className="h2 pb-1 justify-content-center text-center" >Resuelve tus dudas</h2>
           <p className="p pb-5 pt-1">Todo lo que necesitas saber sobre tu certificado</p>
         </div>

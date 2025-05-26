@@ -13,6 +13,7 @@ export default props => {
       <p>
         Cumple tus metas personales sin límites
       </p>
+      <br></br>
       
     </CardBody>
     <CardFooter className="pt-2">

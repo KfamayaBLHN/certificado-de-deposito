@@ -22,7 +22,8 @@ export default props => {
       }}
     >
       <article className="container-fluid h-100">
-        <div className="row flex-column-reverse flex-md-row h-100">
+      <div className="row gx-0 flex-column-reverse flex-md-row h-100">
+
 
           {/* Imagen */}
           <div className="col-12 col-md-6 d-flex justify-content-center align-items-end">
