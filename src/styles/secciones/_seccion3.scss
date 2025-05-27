@@ -5,8 +5,8 @@
   padding-top: 3.75vw; // Padding responsivo
 
   .h2 {
-    font-size: 2rem !important; // Tamaño de fuente base
-    line-height: 44px;
+    font-size: 1.75rem;
+    line-height: 38px;
     font-weight: 700;
     letter-spacing: -2;
     margin-bottom: 0rem;
@@ -16,6 +16,7 @@
     font-size: 16px;
     line-height: 22px;
     font-weight: 400;
+    padding-bottom: 32px;
   }
 
   .imag {
@@ -55,12 +56,13 @@
     padding-top: 4vw;
 
     .h2 {
-      font-size: 1.5rem;
-      line-height: 1.8rem;
+      font-size: 1.75rem;
+      line-height: 38px;
     }
 
     .p {
       font-size: 0.9rem; // Ajustar tamaño del párrafo
+      padding-bottom: 32px;
     }
 
     .btnsection3 {
@@ -74,10 +76,11 @@
 @media (min-width: $size-md) {
   .section-3 {
     padding-top: 3vw;
+    text-align: start;
 
     .h2 {
-      font-size: 2rem;
-      line-height: 44px;
+      font-size: 1.75rem;
+      line-height: 38px;
       padding-bottom: 0px;
     }
     .p {

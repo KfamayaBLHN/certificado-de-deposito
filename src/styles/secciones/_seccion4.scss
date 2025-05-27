@@ -1,12 +1,12 @@
 .section-4 {
   background: #e5f8ea;
   position: relative;
-  padding-top: 3.75vw; // Padding responsivo
-  padding-bottom: 3.75vw;
+  padding-top: 3rem; // Padding responsivo
+  padding-bottom: 3rem;
 
   .h2 {
-    font-size: 2rem; // Tamaño de fuente base
-    line-height: 44px;
+    font-size: 1.75rem;
+    line-height: 38px;
     text-align: left; // Centrar el título en pantallas pequeñas
     //margin-bottom: 1rem; // Espacio inferior
     font-weight: 700;
@@ -64,8 +64,8 @@
       font-weight: 400;
     }
     .h2 {
-      font-size: 28px;
-      line-height: 32px;
+      font-size: 1.75rem;
+      line-height: 38px;
       text-align: left;
       padding-bottom: 16px !important;
       margin-bottom: 0px;
@@ -104,12 +104,12 @@
 
 @media (min-width: 768px) and (max-width: 991px) {
   .section-4 {
-    padding: 3vw 0;
+    padding: 0vw 0 3vw 0;
 
     .h2 {
       padding-top: 32px;
-      font-size: 28px;
-      line-height: 32px;
+      font-size: 1.75rem;
+      line-height: 38px;
       text-align: left; // Alinear a la izquierda en pantallas medianas
       padding-bottom: 16px;
     }
@@ -128,6 +128,7 @@
     }
     .img-fluid {
       max-width: 110% !important;
+      translate: -25px 25px;
     }
 
     .list-bullet-check {
@@ -148,7 +149,7 @@
 
 @media (min-width: $size-lg) {
   .section-4 {
-    padding: 2vw 0; // Ajustar padding para pantallas grandes
+    padding: 72px 0; // Ajustar padding para pantallas grandes
 
     .h2 {
       font-size: 28px;

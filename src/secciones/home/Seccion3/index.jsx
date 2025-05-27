@@ -20,7 +20,7 @@ export default props => {
           {/* Columna de texto */}
           <div className="col-12 col-md-5 ps-0 pe-0">
             <h2 className="h2"> ¡Hazlo fácil! Llena el formulario ya</h2>
-            <p className="pb-5 pt-8 p">
+            <p className="pt-2 p">
               Completa el formulario en minutos y recibe atención preferencial de uno de nuestros ejecutivos
             </p>
             <div className="divBtn">
@@ -34,7 +34,7 @@ export default props => {
           </div>
 
           {/* Columna de imagen */}
-          <div className=" divBtn col-12 col-md-6 pb-4 d-flex justify-content-center align-items-end " style={{ paddingBottom: "0px" }}>
+          <div className=" divBtn col-12 col-md-6 d-flex justify-content-center align-items-end " style={{ paddingBottom: "0px" }}>
             <Images
               className="img-section-3"
               alt="Tarjeta"

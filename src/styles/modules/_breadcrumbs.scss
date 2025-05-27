@@ -106,6 +106,11 @@
 }
 
 @media (max-width: 360px) {
+  .breadcrumbs {
+    align-content: center; // centrar contenido
+    padding: 0px;
+  }
+
   .breadcrumbs-list {
     gap: 0.25rem; // menos separación
   }
@@ -116,11 +121,11 @@
   .breadcrumb-current,
   .active1
   .breadcrumb-separator {
-    font-size: 0.65rem !important;  // reduce tamaño
+    font-size: 0.78rem !important;  // reduce tamaño
   }
 
   .breadcrumb-item2 {
-    padding-right: 1rem;
+    padding-right: 0.7rem;
     margin-right: 0.25rem;
 
     &::after {

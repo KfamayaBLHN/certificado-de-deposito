@@ -106,7 +106,7 @@ export default function MainComponent() {
   return (
     <section className="seccion7 px-3" style={{ backgroundColor: '#ffffff' }}>
       <article className="container-fluid px-0">
-        <div className="row pb-7">
+        <div className="row pb-2">
           <div className="col-12">
             <h2 className="text-center">
               {headerText}

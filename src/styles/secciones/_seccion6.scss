@@ -16,3 +16,17 @@
             
     }
 }
+
+@media (min-width: 360px) and (max-width: 992px){
+    .seccion6 {
+        padding-top: 3.75vw;
+        padding-bottom: 3.75vw;
+        background-color: #E6F3F0;
+        .h2 {
+            font-size: 1.75rem;
+            line-height: 38px;
+            color: #4d4d4d;
+                
+        }
+    }
+}

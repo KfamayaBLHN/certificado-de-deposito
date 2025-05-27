@@ -3,7 +3,7 @@
   // min-height: 100vh;
   display: flex;
   align-items: stretch;
-  background-color: #018765;
+  background-color: #018765 !important;
 }
 
 /* Asegura que container y row llenen el alto */
@@ -98,7 +98,7 @@
 
   .btn-cta {
     align-self: center;
-    width: 174px;
+    width: 160px;
   }
 }
 

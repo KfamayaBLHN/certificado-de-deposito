@@ -19,11 +19,11 @@ const Banner = () => {
     return () => window.removeEventListener("resize", updateImage);
   }, []);
   return (
-    <section className="hero-section bg-success " >
+    <section className="hero-section" >
       <div className="container h-100">
         <div className="row h-100">
           {/* Texto a la izquierda */}
-          <div className="col-12 col-lg-6 d-flex flex-column justify-content-center text-center text-lg-start" >
+          <div className="col-12 col-lg-6 d-flex flex-column justify-content-center text-center text-lg-start pb-2" >
             <h1 className="banner-title text-white">
               Transforma tus ahorros con tu Certificado de Depósito
             </h1>

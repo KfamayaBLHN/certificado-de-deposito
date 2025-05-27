@@ -14,7 +14,7 @@ import Card6 from './beneficios/card6';
 const Relacionados = (props) => {
   const backgroundColor = "bg-gray-1";
   return (
-    <section className={`py-5 overflow-hidden`}>
+    <section className={`p-st overflow-hidden`}>
       <div className="container-fluid">{props.children}</div>
     </section>
   );
@@ -22,11 +22,11 @@ const Relacionados = (props) => {
 
 const responsive = {
   desktop: {
-    breakpoint: { max: 4000, min: 1024 },
+    breakpoint: { max: 4000, min: 992 },
     items: 3
   },
   tablet: {
-    breakpoint: { max: 1024, min: 576 },
+    breakpoint: { max: 792, min: 576 },
     items: 2
   },
   mobile: {
@@ -126,7 +126,7 @@ const Cards = (props) => {
 
 const Title = (props) => {
   return (
-    <div className="row textrow  justify-content-center">
+    <div className="row textrow justify-content-center">
       <div className="col-12 pb-2 ">
         <h2 className="h2 text-center">{props.children}</h2>
       </div>
