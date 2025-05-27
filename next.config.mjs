@@ -14,9 +14,9 @@ let _publicBasePath = '';//es el path para las imagenes
 // }
 
 if ( process.env.NODE_ENV !== 'development' ) {
-  _assetPrefix = '/blh/banca-personal/certificado_deposito/';
-  _basePath = '/blh/banca-personal/certificado_deposito';
-  _publicBasePath = '/blh/banca-personal/certificado_deposito';//es el path para las imagenes
+  _assetPrefix = '/blh/banca-personal/certificado_deposito/v1.1.0/';
+  _basePath = '/blh/banca-personal/certificado_deposito/v1.1.0';
+  _publicBasePath = '/blh/banca-personal/certificado_deposito/v1.1.0';//es el path para las imagenes
 }
 
 

@@ -1,3 +1,4 @@
+import Images from "@/components/Images";
 import React, { useEffect, useState } from "react";
 const Banner = () => {
   const site_url = process.env.NEXT_PUBLIC_SITE_URL;
@@ -6,13 +7,13 @@ const Banner = () => {
   useEffect(() => {
     const updateImage = () => {
        if (window.matchMedia("(max-width: 577px)").matches) {
-        setImageSrc("/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-certificado-deposito-mobile-031124-01@1x.webp");
+        setImageSrc(site_url + "/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-certificado-deposito-mobile-031124-01@1x.webp");
       } else if (window.matchMedia("(max-width: 768px)").matches) {
-        setImageSrc("/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-Certificado-deposito-tablet-190525-01-2x.webp");
+        setImageSrc(site_url + "/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-Certificado-deposito-tablet-190525-01-2x.webp");
       } else if (window.matchMedia("(max-width: 991px)").matches) {
-        setImageSrc("/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-certificado-deposito-desktop-031124-01@2x.webp");
+        setImageSrc(site_url + "/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-certificado-deposito-desktop-031124-01@2x.webp");
       } else {
-        setImageSrc("/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-certificado-deposito-desktop-031124-01@2x.webp");
+        setImageSrc(site_url + "/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-certificado-deposito-desktop-031124-01@2x.webp");
       }
     };
 

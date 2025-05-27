@@ -11,6 +11,7 @@
     //margin-bottom: 1rem; // Espacio inferior
     font-weight: 700;
     letter-spacing: -2;
+    color: #4D4D4D;
   }
 
   .imag {
@@ -154,8 +155,8 @@
     padding: 2vw 0; // Ajustar padding para pantallas grandes
 
     .h2 {
-      font-size: 28px;
-      line-height: 44px;
+      font-size: 32px;
+      line-height: 2.75rem;
       padding-bottom: 0px;
     }
 
@@ -188,7 +189,7 @@
       max-height: 500px;
     }
     .h2 {
-      font-size: 28px;
+      font-size: 32px;
       line-height: 44px;
       padding-bottom: 0px;
       padding-top: 0px !important;

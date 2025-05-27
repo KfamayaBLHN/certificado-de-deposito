@@ -9,7 +9,8 @@
     line-height: 44px;
     font-weight: 700;
     letter-spacing: -2;
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
+    color: #4D4D4D;
   }
 
   .p {
@@ -99,6 +100,10 @@
 @media (min-width: $size-lg) {
   .section-3 {
     text-align: start; // Alinear el texto a la izquierda
+
+    .p {
+      padding-bottom: 32px;
+    }
   }
 }
 

@@ -21,7 +21,7 @@ export default props => {
           {/* Columna de texto */}
           <div className="col-12 col-md-5 pb-9 ps-0 pe-0">
             <h2 className="h2">¡Hazlo fácil! Llena el formulario y recibe asesoría</h2>
-            <p className="pb-5 pt-1 p">
+            <p className="pt-1 p">
               Completa el formulario en minutos y recibe atención preferencial de uno de nuestros ejecutivos
             </p>
             <a
