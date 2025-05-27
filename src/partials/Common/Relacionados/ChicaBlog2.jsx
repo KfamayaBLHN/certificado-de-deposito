@@ -13,8 +13,6 @@ export default props => {
       <p>
         Cumple tus metas personales sin límites
       </p>
-      <br></br>
-      
     </CardBody>
     <CardFooter className="pt-2">
       <Link href={`https://www.lafise.com/blh/PrestamosBLH/personal.html`} className="link fw-semibold">Conocer más ›</Link>
