@@ -36,7 +36,7 @@ export default props => {
           </div>
 
           {/* Texto */}
-          <div className="col-12 col-md-6 d-flex flex-column justify-content-start ps-2 pe-3">
+          <div className="col-12 col-md-6 d-flex flex-column justify-content-start ps-2 pe-2">
             <h2 className="h2">
               Esto necesitarás para la apertura de tu Depósito a plazo fijo
             </h2>

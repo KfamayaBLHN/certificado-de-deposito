@@ -88,14 +88,14 @@ const CONTENTS = [
 ];
 
 export default function MainComponent() {
-  const [headerText, setHeaderText] = useState("Dale un impulso a tu experiencia con estos beneficios");
+  const [headerText, setHeaderText] = useState("Dale un impulso a tu experiencia con estos beneficio");
 
   useEffect(() => {
     function handleResize() {
       if (window.innerWidth < 768) {
-        setHeaderText("Dale un impulso a tu experiencia con estos beneficios");
+        setHeaderText("Dale un impulso a tu experiencia con estos beneficio");
       } else {
-        setHeaderText("Dale un impulso a tu experiencia con estos beneficios");
+        setHeaderText("Dale un impulso a tu experiencia con estos beneficio");
       }
     }
     handleResize();
