@@ -23,7 +23,7 @@ const Banner = () => {
       <div className="container h-100">
         <div className="row h-100">
           {/* Texto a la izquierda */}
-          <div className="col-12 col-lg-6 d-flex flex-column justify-content-center text-center text-lg-start pb-2" >
+          <div className="col-12 col-lg-6 d-flex flex-column justify-content-center text-center text-lg-start pb-4" >
             <h1 className="banner-title text-white">
               Transforma tus ahorros con tu Certificado de Depósito
             </h1>
@@ -32,7 +32,7 @@ const Banner = () => {
             </p>
             <a
               href="https://www.lafise.com/blh/banca-personal/certificado-deposito/solicitud-en-linea"
-              className="btn btn-light btn-lg btn-cta h-600p"
+              className="btn btn-light btn-lg btn-cta h-600p" style={{fontWeight: '600'}}
             >
               ¡Obtenlo ya!
 

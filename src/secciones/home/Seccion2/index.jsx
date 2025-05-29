@@ -19,6 +19,15 @@ const Text = ({ title, content }) => (
 
 const CONTENTS = [
   {
+    icon: "icon-n6",
+    title: "Tasa de interés preferencial",
+    content: (
+      <>
+        Disfruta de una tasa de interés más alta
+      </>
+    ),
+  },
+  {
     icon: "icon-n1",
     title: "Utiliza Bancanet",
     content: (
@@ -75,27 +84,18 @@ const CONTENTS = [
         Desde 3, 6, 9 y 12 meses
       </>
     ),
-  },
-  {
-    icon: "icon-n6",
-    title: "Tasa de interés preferencial",
-    content: (
-      <>
-        Disfruta de una tasa de interés más alta
-      </>
-    ),
-  },
+  }
 ];
 
 export default function MainComponent() {
-  const [headerText, setHeaderText] = useState("Dale un impulso a tu experiencia con estos beneficio");
+  const [headerText, setHeaderText] = useState("Dale un impulso a tu experiencia con estos beneficios");
 
   useEffect(() => {
     function handleResize() {
       if (window.innerWidth < 768) {
-        setHeaderText("Dale un impulso a tu experiencia con estos beneficio");
+        setHeaderText("Dale un impulso a tu experiencia con estos beneficios");
       } else {
-        setHeaderText("Dale un impulso a tu experiencia con estos beneficio");
+        setHeaderText("Dale un impulso a tu experiencia con estos beneficios");
       }
     }
     handleResize();
@@ -104,17 +104,17 @@ export default function MainComponent() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
   return (
-    <section className="seccion7 px-3" style={{ backgroundColor: '#ffffff' }}>
+    <section className="seccion7 pt-6 pb-3" style={{ backgroundColor: '#ffffff' }}>
       <article className="container-fluid px-0">
         <div className="row pb-2">
           <div className="col-12">
-            <h2 className="text-center">
+            <h2 className="text-center" style={{ color: '#4d4d4d' }}>
               {headerText}
             </h2>
           </div>
         </div>
 
-        <div className="row justify-content-center pt-5">
+        <div className="row justify-content-center pt-4">
           {CONTENTS.map((item, index) => (
             <div key={index} className="col-12 col-md-6 col-xl-5 px-3 mb-4">
               <Box icon_name={item.icon}>

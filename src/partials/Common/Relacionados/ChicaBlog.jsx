@@ -15,7 +15,7 @@ export default props => {
       </p>
     </CardBody>
     <CardFooter className="pt-2">
-      <Link href={`https://www.lafise.com/blh/banca-personal/tarjetas/tarjetas-de-credito/`} className="link fw-semibold">Conocer más ›</Link>
+      <Link href={`https://www.lafise.com/blh/banca-personal/tarjetas/tarjetas-de-credito/`} className="link fw-semibold clr">Conocer más ›</Link>
     </CardFooter>
   </Card>
 </div>

@@ -11,11 +11,11 @@ export default props => {
     <CardBody className="pt-4">
       <h3 className=" pb-1 fs-5">Préstamos personales</h3>
       <p>
-        Cumple tus metas personales sin límites
+        Cumple tus metas personales sin <br></br>límites
       </p>
     </CardBody>
     <CardFooter className="pt-2">
-      <Link href={`https://www.lafise.com/blh/PrestamosBLH/personal.html`} className="link fw-semibold">Conocer más ›</Link>
+      <Link href={`https://www.lafise.com/blh/PrestamosBLH/personal.html`} className="link fw-semibold clr">Conocer más ›</Link>
     </CardFooter>
   </Card>
 </div>

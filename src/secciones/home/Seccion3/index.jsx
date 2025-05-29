@@ -5,8 +5,9 @@ export default props => {
 
   const sources = {
     tarjeta2: {
-      src: "/imagenes/footage-4/img-secondary-section04-asesoria-personalizada-card-chl-tablet-blhn-may-01-1x.webp",
-      src_2x: "/imagenes/footage-4/img-secondary-section04-asesoria-personalizada-card-chl-tablet-blhn-may-01-2x.webp", alt: "Ejecutivos listos para que recibas atención preferencial",
+      src: "/imagenes/footage-4/img-secondary-section04-asesoria-personalizada-card-chl-desktop-blhn-nov-01@2x.webp",
+      src_2x: "/imagenes/footage-4/img-secondary-section04-asesoria-personalizada-card-chl-mobile-blhn-nov-01@2x.webp", 
+      alt: "Ejecutivos listos para que recibas atención preferencial",
       title: "Ejecutivos listos para que recibas atención preferencial",
       w: 550,
       h: 550
@@ -19,7 +20,7 @@ export default props => {
         <div className="row align-items-end align-items-xl-start flex-md-row">
           {/* Columna de texto */}
           <div className="col-12 col-md-5 ps-0 pe-0">
-            <h2 className="h2"> ¡Hazlo fácil! Llena el formulario ya</h2>
+            <h2 className="h2">¡Hazlo fácil! Llena el formulario ya</h2>
             <p className="pt-2 p">
               Completa el formulario en minutos y recibe atención preferencial de uno de nuestros ejecutivos
             </p>
@@ -34,7 +35,7 @@ export default props => {
           </div>
 
           {/* Columna de imagen */}
-          <div className=" divBtn col-12 col-md-6 d-flex justify-content-center align-items-end " style={{ paddingBottom: "0px" }}>
+          <div className=" divBtn col-12 col-md-5 d-flex justify-content-center align-items-end " style={{ paddingBottom: "0px" }}>
             <Images
               className="img-section-3"
               alt="Tarjeta"
