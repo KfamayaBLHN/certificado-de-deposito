@@ -6,7 +6,7 @@ export default props => {
   const sources = {
     tarjeta2: {
       src: "/imagenes/footage-4/img-secondary-section04-asesoria-personalizada-card-chl-desktop-blhn-nov-01@2x.webp",
-      src_2x: "/imagenes/footage-4/img-secondary-section04-asesoria-personalizada-card-chl-mobile-blhn-nov-01@2x.webp", 
+      src_2x: "/imagenes/footage-4/img-secondary-section04-asesoria-personalizada-card-chl-tablet-blhn-may-01-2x.webp", 
       alt: "Ejecutivos listos para que recibas atención preferencial",
       title: "Ejecutivos listos para que recibas atención preferencial",
       w: 550,
@@ -21,7 +21,7 @@ export default props => {
           {/* Columna de texto */}
           <div className="col-12 col-md-5 ps-0 pe-0">
             <h2 className="h2">¡Hazlo fácil! Llena el formulario ya</h2>
-            <p className="pt-2 p">
+            <p className="p">
               Completa el formulario en minutos y recibe atención preferencial de uno de nuestros ejecutivos
             </p>
             <div className="divBtn">

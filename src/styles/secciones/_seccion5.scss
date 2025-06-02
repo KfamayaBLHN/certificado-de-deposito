@@ -7,7 +7,6 @@
   .h2 {
     font-size: 1.75rem;
     line-height: 38px;
-    
   }
 }
 .qs p {
@@ -62,8 +61,15 @@
   background-color: #F9F9F9;
 }
 
-
-
 .desktopBreadcrumbs { 
   display: none;
+}
+
+@media (min-width: 768px) {
+  .section-5 {
+    .p {
+      padding-bottom: 32px;
+    }
+
+  }
 }
