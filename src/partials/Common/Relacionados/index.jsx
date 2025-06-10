@@ -38,7 +38,7 @@ const responsive = {
 const Item = (props) => {
   return (
     <div className="carousel-container h-100">
-      <div className="h-100 px-2">
+      <div className="h-100 px-4">
         {props.children}
       </div>
     </div>

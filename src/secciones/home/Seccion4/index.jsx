@@ -40,7 +40,7 @@ export default props => {
             <h2 className="h2">
               Esto necesitarás para la apertura de tu Depósito a plazo fijo
             </h2>
-            <ul className="list-unstyled list-bullet-check mb-0 pb-5 mt-0">
+            <ul className="list-unstyled list-bullet-check mb-0 mt-0">
               <li>DNI</li>
               <li>RTN</li>
               <li>Pasaporte o carnet de residencia, en caso de ser extranjero</li>

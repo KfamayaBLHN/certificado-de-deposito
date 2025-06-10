@@ -19,7 +19,7 @@ export default props => {
       <article className="container-fluid">
         <div className="row align-items-end align-items-xl-start flex-md-row">
           {/* Columna de texto */}
-          <div className="col-12 col-md-5 ps-0 pe-0">
+          <div className="col-12 col-md-5 ps-0 pe-0 divul">
             <h2 className="h2">¡Hazlo fácil! Llena el formulario ya</h2>
             <p className="p">
               Completa el formulario en minutos y recibe atención preferencial de uno de nuestros ejecutivos

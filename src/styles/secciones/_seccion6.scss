@@ -23,8 +23,8 @@
 
 @media (min-width: 360px) and (max-width: 992px){
     .seccion6 {
-        padding-top: 3.75vw;
-        padding-bottom: 3.75vw;
+        padding-top: 0vw;
+        padding-bottom: 0vw;
         background-color: #E6F3F0;
         .h2 {
             font-size: 1.75rem;
@@ -32,5 +32,12 @@
             color: #4d4d4d;
                 
         }
+    }
+}
+
+@media (min-width: 993px) {
+    .seccion6 {
+        padding-top: 72px;
+        padding-bottom: 48px;
     }
 }

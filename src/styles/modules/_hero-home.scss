@@ -80,8 +80,9 @@
     // min-height: 100vh;
   }
   .banner-title {
-    padding-top: 8.75vw;
-    font-size: 1.8rem;
+    //padding-top: 8.75vw; 48px
+    padding-top: 48px;
+    font-size: 32px;
     line-height: 2.5rem;
     padding-left: 22px;
     padding-right: 22px;
@@ -132,7 +133,6 @@
       "Helvetica Neue", sans-serif;
   }
   .p {
-    font-size: 32px;
     line-height: 22px;
     font-weight: 400;
     padding-bottom: 0%;
@@ -157,15 +157,15 @@
     font-size: 2.1rem;
     line-height: 2.6rem;
     text-align: left;
-    padding-top: 16;
+    //padding-top: 16px; eliminar
     margin-left: 0;
     max-width: 100%;
     padding-left: 40px;
   }
 
   .banner-subheading {
-    font-size: 1.2rem;
-    line-height: 1.8rem;
+    font-size: 1rem;
+    line-height: 22px;
     text-align: left;
     margin-left: 0;
     padding-left: 40px;

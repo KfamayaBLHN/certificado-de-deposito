@@ -27,8 +27,7 @@
 
   .list-bullet-check {
     padding-top: 1rem;
-    padding-bottom: 2rem;
-
+    padding-bottom: 20px;
     li {
       padding-bottom: 0.5rem;
       font-size: 1rem;
@@ -90,8 +89,8 @@
 
     .list-bullet-check {
       li {
-        font-size: 0.85rem;
-        line-height: 2rem;
+        // font-size: 0.85rem;
+        line-height: 24px;
         padding-bottom: 0.4rem;
       }
     }

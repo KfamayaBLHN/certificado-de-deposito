@@ -6,7 +6,7 @@ export default props => {
     <>
       <section className="carrousel-mobile">
         <Img name="beneficio5" />
-        <h3 className="fs-5 pb-1 pt-5 text-center">
+        <h3 className="fs-5 pb-1 pt-4 text-center">
           Plazos adaptados a tus<br/> necesidades
         </h3>
         <p className="pb-2 text-center">

@@ -5,7 +5,7 @@ const replace = require('replace-in-file');
 let _assetPrefix = './';
 
 if ( process.env.NODE_ENV == 'production') {
- _assetPrefix = `/blh/banca-personal/certificado_deposito/v2.0.0/`;
+ _assetPrefix = `/blh/banca-personal/certificado_deposito/v2.0.2/`;
 }
 
 const options = {

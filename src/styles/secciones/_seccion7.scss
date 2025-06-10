@@ -1,6 +1,6 @@
 
 
-@media (min-width: 360px) and (max-width: 576px){
+@media (min-width: 361px) and (max-width: 576px){
     .seccion7 {
         background: #FFFFFF;
         padding-top: 0px;
@@ -15,6 +15,14 @@
             }
     }
     .p-st{
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+}
+
+@media (max-width: 360px) {
+    .seccion7 {
+        background: #FFFFFF;
         padding-top: 48px;
         padding-bottom: 48px;
     }
@@ -78,8 +86,8 @@
 @media (min-width: 1400px){
     .seccion7 {
         background: #FFFFFF;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 72px;
+        padding-bottom: 72px;
         .h2 { 
             font-size: 2rem;
             line-height: 44px;

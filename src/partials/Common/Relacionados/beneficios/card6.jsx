@@ -7,7 +7,7 @@ export default props => {
     <>
       <section className="carrousel-mobile">
         <Img name="beneficio6" />
-        <h3 className="fs-5 pb-1 pt-5 text-center">
+        <h3 className="fs-5 pb-1 pt-4 text-center">
           Tasa de interés preferencial
         </h3>
         <p className="pb-2 text-center">
