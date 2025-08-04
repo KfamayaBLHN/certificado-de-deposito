@@ -1,84 +1,194 @@
+.section-5 {
+  background: linear-gradient(270deg, #DCF5E4 5%, #FEFFFE 70%);
+  position: relative;
+  padding-top: 3rem; // Padding responsivo
+  padding-bottom: 0;
 
-.section-5{
-  background-color: #F9F9F9;
-  color: #4d4d4d;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
   .h2 {
     font-size: 1.75rem;
     line-height: 38px;
+    text-align: center; // Centrar el título en pantallas pequeñas
+    //margin-bottom: 1rem; // Espacio inferior
+    font-weight: 500;
+    letter-spacing: -2;
+    color: #4d4d4d
   }
-}
-.qs p {
-  font-size: 16px !important; /* O el tamaño en px que desees */
-}
-.section-5 .container-fluid {
-  padding-left: 25px;
-  padding-right: 25px;
-}
 
-.section-5 .questions {
-  padding-left: 12.7px;
-  padding-right: 12.7px;
-}
+  .imag {
+    display: flex;
+    justify-content: center;
+  }
 
-.row {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .img-section-5 {
+    height: auto;
+  }
 
-.qs{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.section5 .h2 {
-  padding-bottom: 30px;
-  font-size: 2.7rem;
-  text-align: center;
-}
-.section5 .p {
-  padding: 0px 15px;
-  text-align: center;
-}
-
-.p {
-  margin: 0;
-  padding-bottom: 2rem;
-}
-
-.title {
-  font-size: 18px;
-  line-height: 1rem;
-}
-
-.section-5 .accordion-body {
-  padding: 0;
-  padding-top: 10px;
-  background-color: #F9F9F9;
-}
-
-.desktopBreadcrumbs { 
-  display: none;
-}
-
-@media (min-width: 768px) {
-  .section-5 {
-    .p {
-      padding-bottom: 32px;
-    }
-
+  // Pseudo-elemento (revisar su uso)
+  &::after {
+    content: ""; // Necesario para que se muestre
+    display: none; // Ocultar por defecto
+    position: absolute;
+    // ... (Estilos que tenías, pero considera si son necesarios y responsivos)
+    // @include wh(223px, 153px);
+    // top: 185px !important;
+    // right: -140px;
   }
 }
 
-@media (min-width: 1000px) {
+// Media Queries
+
+@media (min-width: 360px) {
   .section-5 {
+    min-height: 100vh; // 🟢 fuerza la altura total de pantalla
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; // 🟢 distribuye contenido
+
     .h2 {
-      font-size: 32px;
+      font-size: 1.75rem;
+      line-height: 38px;
+      text-align: center;
+      padding-bottom: 16px !important;
+      margin-bottom: 0px;
+      text-justify: initial;
+    }
+
+    .p {
+      text-align: center;
+    }
+
+    .container-fluid {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .row {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-between;
+    }
+
+    .img-section-5 {
+      max-width: 260px;
+      margin: 1rem auto 0 auto;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .section-5 {
+    padding: 0vw 0 0vw 0;
+
+
+    .p {
+      text-align: left;
+    }
+
+    .h2 {
+      padding-top: 32px;
+      font-size: 1.75rem;
+      line-height: 38px;
+      text-align: left; // Alinear a la izquierda en pantallas medianas
+      padding-bottom: 16px;
+    }
+
+    .img-section-5 {
+      // max-width: 600px;
+      max-width: 100%; // Imagen flexible
+      width: 100%;
+      height: auto;
+      padding-top: 48px;
+      padding-bottom: 48px;
+      align-self: center;
+    }
+    .img-fluid {
+      max-width: 110% !important;
+      translate: -25px 25px;
+    }
+
+    &::after {
+      display: block; // Mostrar el pseudo-elemento en pantallas medianas
+    }
+  }
+}
+
+@media (min-width: $size-md) {
+}
+
+@media (min-width: $size-lg) {
+  .section-5 {
+    padding: 72px 0; // Ajustar padding para pantallas grandes
+
+    .h2 {
+      font-size: 28px;
+      line-height: 44px;
+      padding-bottom: 0px;
     }
 
   }
+}
+
+@media (min-width: $size-xxl) {
+  .section-5 {
+    padding: 10px 0; // Volver a píxeles si es necesario para pantallas muy grandes
+
+    .h2 {
+      font-size: 2.5rem;
+      line-height: 3rem;
+    }
+
+    .img-section-5 {
+      max-width: 550px;
+      padding: 20px 0 0 0;
+    }
+  }
+}
+
+  /* Large (992px - 1399px) */
+
+  @media (min-width: 992px) and (max-width: 1399px) {
+    .section-5 {
+      .img-fluid {
+        max-height: 500px;
+      }
+      .h2 {
+        font-size: 32px !important;
+        line-height: 44px;
+        padding-bottom: 0px !important;
+        padding-top: 0px !important;
+        text-align: left;
+      }
+
+      .p {
+        text-align: left;
+      }
+    }
+  }
+
+
+@media (min-width: 1400px) {
+  .section-5 {
+    padding-bottom: 0%;
+
+    .img-fluid {
+      min-height: 350px;
+    }
+
+    .p {
+      text-align: left;
+    }
+    
+    .h2 {
+      font-size: 32px !important;
+      line-height: 44px;
+      padding-bottom: 0px !important;
+      padding-top: 0px !important;
+      padding-right: 72px;
+      text-align: left;
+    }
+  }
+
 }

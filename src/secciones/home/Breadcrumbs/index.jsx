@@ -7,7 +7,7 @@ export default props => {
         [
           {label: "Inicio", url: 'https://www.lafise.com/blh'},
           {label: "Banca personal", url: 'https://www.lafise.com/blh/banca-personal'},
-          {label: "Certificado de Depósito", url: '#'}
+          {label: "Cuenta Horizonte", url: '#'}
         ]
       } />
     </>

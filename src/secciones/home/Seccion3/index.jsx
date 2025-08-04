@@ -1,54 +1,63 @@
 import Images from "@/components/Images";
 
 export default props => {
-  const site_url = process.env.NEXT_PUBLIC_SITE_URL;
-
   const sources = {
-    tarjeta2: {
-      src: "/imagenes/footage-4/img-secondary-section04-asesoria-personalizada-card-chl-desktop-blhn-nov-01@2x.webp",
-      src_2x: "/imagenes/footage-4/img-secondary-section04-asesoria-personalizada-card-chl-tablet-blhn-may-01-2x.webp", 
-      alt: "Ejecutivos listos para que recibas atención preferencial",
-      title: "Ejecutivos listos para que recibas atención preferencial",
-      w: 550,
-      h: 550
+    ImagenSeccion3: {
+      src: "/imagenes/seccion_extra/mujer/img-secondary-se-chl-mujer-blhn-grl-01-2x.webp",
+      src_2x: "/imagenes/seccion_extra/mujer/img-secondary-se-chl-mujer-blhn-grl-01-2x.webp",
+      alt: "Mujer alegre revisando los requisitos para aperturar su depósito a plazo fijo",
+      title: "Mujer alegre revisando los requisitos para aperturar su depósito a plazo fijo",
+      w: 500,
+      h: 500
     }
   };
 
   return (
-    <section className="section-3" style={{ paddingTop: "48px", paddingBottom: "0" }}>
-      <article className="container-fluid">
-        <div className="row align-items-end align-items-xl-start flex-md-row">
-          {/* Columna de texto */}
-          <div className="col-12 col-md-5 ps-0 pe-0 divul">
-            <h2 className="h2">¡Hazlo fácil! Llena el formulario ya</h2>
-            <p className="p">
-              Completa el formulario en minutos y recibe atención preferencial de uno de nuestros ejecutivos
-            </p>
-            <div className="divBtn">
-              <a
-                href="https://www.lafise.com/blh/banca-personal/certificado-deposito/solicitud-en-linea"
-                className="btnsection3"
-              >
-                ¡Quiero mi asesoría!
-              </a>
-            </div>
-          </div>
+    <section
+      className="section-3 d-flex flex-column justify-content-center"
+      id="requisitos"
+      style={{
+        height: 'auto',
+        minHeight: '385px'
+      }}
+    >
+      <article className="container-fluid h-100">
+        <div className="row gx-0 flex-column-reverse flex-md-row h-100">
 
-          {/* Columna de imagen */}
-          <div className=" divBtn col-12 col-md-5 d-flex justify-content-center align-items-end " style={{ paddingBottom: "0px" }}>
+          {/* Imagen */}
+          <div className="col-12 col-md-6 d-flex justify-content-center align-items-end">
             <Images
-              className="img-section-3"
-              alt="Tarjeta"
+              className="img-fluid object-fit-contain"
               source={sources}
-              name="tarjeta2"
-              style={{
-                objectFit: "contain",
-                maxHeight: "100%",
-                width: "100%",
-                height: "auto"
-              }}
+              name="ImagenSeccion3"
             />
           </div>
+
+          {/* Texto */}
+          <div className="col-12 col-md-6 d-flex flex-column justify-content-center ps-4 pe-4 text-white">
+            <h2 className="h2 mb-3">
+              Abre tu cuenta <span className="text-success">Horizonte Life</span><br />
+              y disfruta de los beneficios:
+            </h2>
+
+            <div className="d-flex flex-column flex-lg-row movilCenter gap-4 mb-4">
+              <img
+                src="/imagenes/seccion_extra/iconos/icn-content-se-bono-vector-blhn-01.svg"
+                alt="Icono bono"
+                style={{ width: '200px', height: 'auto' }}
+              />
+              <img
+                src="/imagenes/seccion_extra/iconos/icn-content-se-tasa-vector-blhn-01.svg"
+                alt="Icono interés"
+                style={{ width: '200px', height: 'auto' }}
+              />
+            </div>
+
+            <a href="#formulario" className="btnsectionextra btn-light btn-cta">
+              ¡Comienza ya!
+            </a>
+          </div>
+
         </div>
       </article>
     </section>

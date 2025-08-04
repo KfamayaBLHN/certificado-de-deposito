@@ -5,12 +5,12 @@ const Banner = () => {
 
   useEffect(() => {
     const updateImage = () => {
-       if (window.matchMedia("(max-width: 577px)").matches) {
-        setImageSrc(site_url + "/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-certificado-deposito-mobile-031124-01@1x.webp");
-      }  else if (window.matchMedia("(max-width: 992px)").matches) {
-        setImageSrc(site_url + "/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-Certificado-deposito-tablet-190525-01-2x.webp");
+      if (window.matchMedia("(max-width: 577px)").matches) {
+        setImageSrc(site_url + "/imagenes/banner-footage/BKG_BLHN_Banner_GRL_Seccion01_Cuenta_Horizonte_Desktop_Sep2024_01@1x.webp");
+      } else if (window.matchMedia("(max-width: 992px)").matches) {
+        setImageSrc(site_url + "/imagenes/banner-footage/BKG_BLHN_Banner_GRL_Seccion01_Cuenta_Horizonte_Desktop_Sep2024_01@1x.webp");
       } else {
-        setImageSrc(site_url + "/imagenes/banner-footage/bkg-blhn-banner-grl-seccion01-certificado-deposito-desktop-031124-01@2x.webp");
+        setImageSrc(site_url + "/imagenes/banner-footage/BKG_BLHN_Banner_GRL_Seccion01_Cuenta_Horizonte_Desktop_Sep2024_01@1x.webp");
       }
     };
 
@@ -19,28 +19,28 @@ const Banner = () => {
     return () => window.removeEventListener("resize", updateImage);
   }, []);
   return (
-    <section className="hero-section" >
-      <div className="container h-100">
-        <div className="row h-100">
+    <section className="hero-section position-relative">
+      <div className="container">
+        <div className="row">
           {/* Texto a la izquierda */}
-          <div className="col-12 col-lg-6 d-flex flex-column justify-content-center text-center text-lg-start pb-4" >
-            <h1 className="banner-title text-white">
-              Transforma tus ahorros con tu Certificado de Depósito
+          <div className="col-12 col-lg-6 d-flex flex-column justify-content-center text-center text-lg-start pb-4 pt-5 pt-lg-0">
+            <h1 className="banner-title text-gray">
+              <span className="color1">Construye la vida que deseas, con tu</span>
+              <span className="color2"> Cuenta Horizonte </span>
             </h1>
-            <p className="banner-subheading text-white">
+            <p className="banner-subheading text-gray">
               Garantiza tu bienestar a largo plazo, con una tasa de interés que te ayude a hacer crecer tu dinero
             </p>
             <a
-              href="https://www.lafise.com/blh/banca-personal/certificado-deposito/solicitud-en-linea"
-              className="btn btn-light btn-lg btn-cta h-600p" style={{fontWeight: '600'}}
+              href="https://www.lafise.com/blh/banca-personal/cuenta-horizonte/solicitud-en-linea"
+              className="btnsection3 ctahero btn-light btn-lg btn-cta btahero w-700p"
+              style={{ fontWeight: '600' }}
             >
-              ¡Obtenlo ya!
-
+              ¡Solicítala ya!
             </a>
-
           </div>
-
-          {/* Imagen a la derecha */}
+  
+          {/* Imagen visualmente fuera del grid, alineada a la derecha */}
           <div className="col-12 col-lg-6 p-0">
             <div className="h-100 d-flex align-items-end justify-content-center">
               <img
@@ -55,6 +55,7 @@ const Banner = () => {
       </div>
     </section>
   );
+  
 };
 
 export default Banner;

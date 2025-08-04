@@ -14,6 +14,56 @@
   background-color: #00583c;
   color: #ffffff;
 }
+.btnsection4 {
+  background-color: #018765;
+  color: #ffffff;
+  padding: 16px 40px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.btnsection4:hover {
+  border-color: #018765 !important;
+  border: 1px !important;
+  background-color: #00583c;
+  color: #ffffff;
+}
+
+.btnsection6 {
+  background-color: #018765;
+  color: #ffffff;
+  padding: 16px 40px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.btnsection6:hover {
+  border-color: #018765 !important;
+  border: 1px !important;
+  background-color: #00583c;
+  color: #ffffff;
+}
+
+.btnsectionextra {
+  background-color: #FFFFFF;
+  color: #018765;
+  padding: 16px 40px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.btnsectionextra:hover {
+  border-color: #018765 !important;
+  border: 1px !important;
+  background-color: #00583c;
+  color: #ffffff;
+}
 
 .btn-light {
   border: 1px!important;
@@ -35,7 +85,7 @@
 
 .btn-light:hover{
   background:#00583C!important;
-  color: #018765;
+  color: #ffffff;
   border-color: #00583C;
   border: 1px!important;
 }

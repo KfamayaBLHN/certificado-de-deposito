@@ -1,59 +1,38 @@
 {
-  "beneficio1": {
-    "src": "/imagenes/iconos/tarjetas-debito/icono_BNT.svg",
-    "alt": "Utiliza Bancanet para revisar gestiones",
-    "w": 120,
-    "h": 120
+  "ObtenSvg": {
+    "src": "/imagenes/icons/icn_blhn_03_lafise_incremento_interes_circular_ch.svg",
+    "alt": "Incremento de interes",
+    "w": 157,
+    "h": 157
   },
-  "beneficio2": {
-    "src": "/imagenes/iconos/tarjetas-debito/icono_Creditos.svg",
-    "alt": "Accede a créditos para obtener más beneficios",
-    "w": 120,
-    "h": 120
+  "RecibeSvg": {
+    "src": "/imagenes/icons/icn_blhn_02_recibe_td_ch.svg",
+    "alt": "Recibe tu Tarjeta de Débito dorada ",
+    "w": 157,
+    "h": 157
   },
-  "beneficio3": {
-    "src": "/imagenes/iconos/tarjetas-debito/icono_Interes.svg",
-    "alt": "Intereses pagados directamente a la cuenta",
-    "w": 120,
-    "h": 120
+  "DisfrutaSvg": {
+    "src": "/imagenes/icons/icn_blhn_01_disfruta_tasa_interes_ch.svg",
+    "alt": "Disfruta una tasa atractiva de interés",
+    "w": 157,
+    "h": 157
   },
-  "beneficio4": {
-    "src": "/imagenes/iconos/tarjetas-debito/icono_Moneda.svg",
-    "alt": "Disponible en la moneda que deseas",
-    "w": 120,
-    "h": 120
+  "AcumulaSvg": {
+    "src": "/imagenes/icons/icn_blhn_04_acumula_doble_points_ch.svg",
+    "alt": "Acumula doble punto por compras",
+    "w": 157,
+    "h": 157
   },
-  "beneficio5": {
-    "src": "/imagenes/iconos/tarjetas-debito/icono_Plazos.svg",
-    "alt": "Plazos adaptados a tu necesidad",
-    "w": 120,
-    "h": 120
+  "AdministraSvg": {
+    "src": "/imagenes/icons/icn_blhn_05_administra_bnt_ch.svg",
+    "alt": "Administra tu dinero desde Bancanet",
+    "w": 157,
+    "h": 157
   },
-  "beneficio6": {
-    "src": "/imagenes/iconos/tarjetas-debito/icono_Tasa.svg",
-    "alt": "Disfruta de tasa de interés preferencial",
-    "w": 120,
-    "h": 120
-  },
-  "chicoBlog": {
-    "src": "/imagenes/icons/img-secondary-section06-blog-cuentas-ahorro-chl-cards-blhn-dic-01@2x.webp",
-    "alt": "Joven sonriendo mientras busca en internet la Cuenta 100% Digital de LAFISE",
-    "title": "Joven sonriendo mientras busca en internet la Cuenta 100% Digital de LAFISE",
-    "w": 350,
-    "h": 211
-  },
-  "chicaBlog": {
-    "src": "/imagenes/icons/img-secondary-section06-blog-tarjeta-credito-chl-cards-blhn-dic-01@2x.webp",
-    "alt": "Mujer feliz haciendo sus compras con la Tarjeta de Crédito LAFISE",
-    "title": "Mujer feliz haciendo sus compras con la Tarjeta de Crédito LAFISE",
-    "w": 328,
-    "h": 211
-  },
-  "chicaBlog2": {
-    "src": "/imagenes/icons/img-secondary-section06-blog-prestamos-personales-chl-cards-blhn-dic-01@2x.webp",
-    "alt": "Mujer empresaria visualizando su próximo Préstamo Personal para mejorar su negocio",
-    "title": "Mujer empresaria visualizando su próximo Préstamo Personal para mejorar su negocio",
-    "w": 328,
-    "h": 211
+  "SinPenalizacionSvg": {
+    "src": "/imagenes/icons/icn_blhn_06_lafise_retiro_ch.svg",
+    "alt": "Sin Penalizacion por retiro",
+    "w": 157,
+    "h": 157
   }
 }

@@ -1,25 +1,25 @@
 .section-3 {
-  background: #ffffff;
   position: relative;
-  text-align: center;
-  padding-top: 3.75vw; // Padding responsivo
+  padding-top: 3rem;
+  padding-bottom: 0rem;
+
+  background-image: url('/imagenes/seccion_extra/fondos/bkg-secondary-se-chl-blhn-mobile-01-1x.webp');
+  background-repeat: no-repeat;
+  background-position: right center; /* O right bottom, según prefieras */
+  background-size: cover; /* Cambiado a cover para que cubra todo el ancho y alto */
+  background-attachment: scroll;
+
+  width: 100vw; /* Forzar el ancho al 100% de viewport */
+  margin-left: calc(-50vw + 50%); /* Esto centra el background para que no tenga margen a los lados */
 
   .h2 {
     font-size: 1.75rem;
     line-height: 38px;
-    font-weight: 700;
+    text-align: left; // Centrar el título en pantallas pequeñas
+    //margin-bottom: 1rem; // Espacio inferior
+    font-weight: 500 ;
     letter-spacing: -2;
-    margin-bottom: 0rem;
-    padding: 0 16px;
-    color: #4d4d4d
-  }
-
-  .p {
-    font-size: 16px;
-    line-height: 22px;
-    font-weight: 400;
-    padding-bottom: 32px;
-    padding: 0 40px 32px 40px;
+    color: #ffffff;
   }
 
   .imag {
@@ -28,196 +28,183 @@
   }
 
   .img-section-3 {
-    max-width: 100%; // Imagen flexible
-    padding: 0rem 0;
     height: auto;
   }
 
-  .btnsection3 {
-    // Estilos base para el botón
-    display: inline-block;
-    padding: 0.75rem 1.25rem;
-    font-size: 1rem;
-    // font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    background-color: #018765;
-    color: #ffffff;
-    border-radius: 0.25rem;
-    transition: background-color 0.15s ease-in-out;
-    padding-bottom: 3.75vw;
-    &:hover {
-      background-color: #05634c; // Un color de ejemplo al pasar el mouse
-    }
-  }
-
-  .divBtn{
-    padding-bottom: 32px;
+  // Pseudo-elemento (revisar su uso)
+  &::after {
+    content: ""; // Necesario para que se muestre
+    display: none; // Ocultar por defecto
+    position: absolute;
+    // ... (Estilos que tenías, pero considera si son necesarios y responsivos)
+    // @include wh(223px, 153px);
+    // top: 185px !important;
+    // right: -140px;
   }
 }
 
 // Media Queries
 
-@media (min-width: $size-sm) {
+@media (min-width: 360px) {
   .section-3 {
-    padding-top: 4vw;
+    min-height: 100vh; // 🟢 fuerza la altura total de pantalla
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; // 🟢 distribuye contenido
 
+    li {
+      padding-bottom: 16px;
+      font-size: 16px;
+      line-height: 19px;
+      font-weight: 400;
+    }
     .h2 {
       font-size: 1.75rem;
       line-height: 38px;
+      text-align: center;
+      padding-bottom: 16px !important;
+      margin-bottom: 0px;
+      text-justify: auto;
+    }
+    .container-fluid {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
-    .p {
-      font-size: 0.9rem; // Ajustar tamaño del párrafo
-      padding-bottom: 32px;
+    .row {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-between;
     }
 
-    .btnsection3 {
-      font-size: 0.9rem; // Ajustar tamaño del botón
-      padding: 0.5rem 1rem;
+    .img-section-3 {
+      max-width: 260px;
+      margin: 1rem auto 0 auto;
     }
-    
   }
+}
+
+@media (max-width: 575.98px) {
+  .movilCenter {
+    align-items: center;
+  }
+
+  .btn-cta {
+    align-self: center;
+    width: 240px;
+    margin-bottom: 43px;
+}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
   .section-3 {
+    background-image: url('/imagenes/seccion_extra/fondos/bkg-secondary-se-chl-blhn-tablet-01-1x.webp');
+    background-repeat: no-repeat;
+    padding: 0vw 0 0vw 0;
+
     .h2 {
-      padding: 0px;
+      padding-top: 32px;
+      font-size: 1.75rem;
+      line-height: 38px;
+      text-align: left; // Alinear a la izquierda en pantallas medianas
+      padding-bottom: 16px;
     }
-    .p {
-      padding: 0 10px 32px 0px;
+    .list-bullet-check li {
+      line-height: 24px;
+    }
+
+    .img-section-3 {
+      // max-width: 600px;
+      max-width: 100%; // Imagen flexible
+      width: 100%;
+      height: auto;
+      padding-top: 48px;
+      padding-bottom: 48px;
+      align-self: center;
+    }
+    .img-fluid {
+      max-width: 110% !important;
+      translate: -25px 72px;
+    }
+
+    &::after {
+      display: block; // Mostrar el pseudo-elemento en pantallas medianas
     }
   }
 }
 
 @media (min-width: $size-md) {
-  .section-3 {
-    padding-top: 3vw;
-    text-align: start;
-
-    .h2 {
-      font-size: 1.75rem;
-      line-height: 38px;
-      padding-bottom: 0px;
-    }
-    .p {
-      padding-top: 0 !important;
-      font-size: 16px;
-      margin-bottom: 0px;
-      padding-bottom: 32px !important;
-    }
-    .img-section-3 {
-      max-width: 110%; // Ajustar el ancho máximo
-    }
-
-    .btnsection3 {
-      font-size: 1rem;
-      padding: 0.75rem 1.25rem;
-    }
-    .divBtn{
-      padding-bottom: 32px;
-    }
-  }
 }
 
 @media (min-width: $size-lg) {
   .section-3 {
-    text-align: start; // Alinear el texto a la izquierda
-  }
-}
+    padding: 72px 0; // Ajustar padding para pantallas grandes
 
-@media (min-width: $size-xl) {
-  .section-3 {
-    .img-section-3 {
-      max-width: 550px;
-    }
-  }
-}
-
-@media (min-width: 992px) and (max-width: 1399px) {
-  .section-3 {
-    padding-top: 72px !important; // Volver a píxeles si es necesario
-    max-height: 384px;
     .h2 {
-      padding-left: 0px;
-      padding-right: 0px;
-      font-size: 32px;
+      font-size: 28px;
       line-height: 44px;
-      width: 320px;
-      margin-top: 0 !important;
-      margin-bottom: 0 !important;
-      padding-top: 0 !important;
-      padding-bottom: 16px !important;
-    }
-
-    .p {
-      font-size: 16px;
-      line-height: 22px;
-      padding-bottom: 32px !important;
-      padding: 0 10px 32px 0px;
-    }
-    .img-section-3 {
-      max-width: 550px;
-    }
-
-    .btnsection3 {
-      font-size: 16px;
-      padding-top: 16px;
-      padding-bottom: 16px;
-      padding-right: 40px;
-      padding-left: 40px;
-    }
-    .img-section-3 {
-      max-width: 90%; // Ajustar el ancho máximo
-      
+      padding-bottom: 0px;
+      color: #ffffff;
     }
   }
 }
+
+@media (min-width: $size-xxl) {
+  .section-3 {
+    background-image: url('/imagenes/seccion_extra/fondos/bkg-secondary-se-chl-blhn-desktop-01-1x.webp');
+    background-repeat: no-repeat;
+    padding: 10px 0; // Volver a píxeles si es necesario para pantallas muy grandes
+
+    .h2 {
+      font-size: 2.5rem;
+      line-height: 3rem;
+      text-align: left;
+    }
+
+    .img-section-3 {
+      max-width: 550px;
+      padding: 20px 0 0 0;
+    }
+  }
+}
+
+  /* Large (992px - 1399px) */
+
+  @media (min-width: 992px) and (max-width: 1399px) {
+    .section-3 {
+      .img-fluid {
+        max-height: 500px;
+      }
+      .h2 {
+        font-size: 32px !important;
+        line-height: 44px;
+        text-align: left;
+        padding-bottom: 0px !important;
+        padding-top: 0px !important;
+      }
+
+    }
+  }
 
 
 @media (min-width: 1400px) {
   .section-3 {
-    padding-top: 72px !important; // Volver a píxeles si es necesario
-    max-height: 384px;
-
-    .divul{
-      padding-top: 16px;
+    padding: 30px 0 0 0;
+    .img-fluid {
+      max-height: 500px;
     }
-    
     .h2 {
-      padding-left: 0px;
-      padding-right: 0px;
-      font-size: 32px;
+      text-align: left;
+      font-size: 32px !important;
       line-height: 44px;
-      width: 520px;
-      margin-top: 0 !important;
-      margin-bottom: 0 !important;
-      padding-top: 0 !important;
-      padding-bottom: 16px !important;
+      padding-bottom: 0px !important;
+      padding-top: 0px !important;
+      padding-right: 72px;
     }
 
-    .p {
-      font-size: 16px;
-      line-height: 22px;
-      padding-bottom: 32px !important;
-      padding-right: 5rem;
-      padding: 0 10px 32px 0px;
-    }
-    .img-section-3 {
-      max-width: 550px;
-     
-    }
-
-    .btnsection3 {
-      font-size: 16px;
-      padding-top: 16px;
-      padding-bottom: 16px;
-      padding-right: 40px;
-      padding-left: 40px;
-    }
-    .img-section-3 {
-      max-width: 105%; // Ajustar el ancho máximo
-    }
   }
+
 }
