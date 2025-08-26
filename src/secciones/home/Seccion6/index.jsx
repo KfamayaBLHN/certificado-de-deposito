@@ -22,7 +22,7 @@ export default props => {
       }}
     >
       <article className="container-fluid h-100">
-      <div className="row gx-0 flex-md-row h-100">
+      <div className="row gx-0 flex-md-row h-100 sec6-content">
 
         {/* Texto */}
         <div className="col-12 col-md-6 d-flex flex-column justify-content-start divMejor">
@@ -33,12 +33,13 @@ export default props => {
             <li>Apertura desde L15,000 o $700</li>
           </ul>
           <a href='https://www.lafise.com/blh/banca-personal/cuenta-horizonte/solicitud-en-linea' 
-            className="btnsection6 btn-light btn-cta mb-5"
+            title="Solicitud en linea de cuenta horizonte"
+            className="btnsection6 btn-light btn-cta"
             style={{ fontWeight: '600' }}>¡Quiero mi cuenta!</a>
         </div>
 
         {/* Imagen */}
-        <div className="col-12 col-md-6 d-flex justify-content-center align-items-end">
+        <div className="col-12 col-md-6 d-flex justify-content-center align-items-center">
           <Images
             className="img-fluid object-fit-contain"
             source={sources}

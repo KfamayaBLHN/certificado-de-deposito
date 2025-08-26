@@ -27,11 +27,11 @@ export default props => {
         {/* Texto */}
         <div className="col-12 col-md-6 d-flex flex-column justify-content-start divMejor">
           <h2 className="h2">Doble punto con tu Tarjeta de Débito Dorada</h2>
-          <p className="pb-5 pt-1 p">
+          <p className="p">
             Diseñada para que disfrutes de recompensas increíbles, 
             al acumular doble punto por cada dólar de consumo
           </p>
-          <a href='https://www.lafise.com/blh/banca-personal/cuenta-horizonte/solicitud-en-linea' className="btnsection4 btn-light btn-cta"
+          <a href='https://www.lafise.com/blh/banca-personal/cuenta-horizonte/solicitud-en-linea' title="Solicitud en linea de cuenta horizonte" className="btnsection4 btn-light btn-cta"
               style={{ fontWeight: '600' }}>¡Descúbrela aquí!</a>
         </div>
 

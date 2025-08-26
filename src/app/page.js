@@ -26,11 +26,10 @@ export default function Home() {
 
   return (
     <>
-      {env !== 'development' && (<div dangerouslySetInnerHTML={{ __html: '<!--#include virtual="/cdn/basics/header-banco/v3.0/header-blh.html" -->' }}></div>)}
+      {/* {env !== 'development' && (<div dangerouslySetInnerHTML={{ __html: '<!--#include virtual="/cdn/basics/header-banco/v3.0/header-blh.html" -->' }}></div>)} */}
       <main>
         <Hero />
         <Breadcrumbs/>
-        {/* {isMobile ? <Seccion7 /> : <Seccion2 />} */}
         <Seccion2 />
         <Seccion3 /> 
         <Seccion4 />
@@ -38,7 +37,7 @@ export default function Home() {
         <Seccion6 /> 
         <Seccion7 />
       </main>
-      {env !== 'development' && (<div dangerouslySetInnerHTML={{ __html: '<!--#include virtual="/cdn/basics/footer-banco/v3.0/footer-blh.html" -->' }}></div>)}
+      {/* {env !== 'development' && (<div dangerouslySetInnerHTML={{ __html: '<!--#include virtual="/cdn/basics/footer-banco/v3.0/footer-blh.html" -->' }}></div>)} */}
     </>
   )
 }

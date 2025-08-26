@@ -17,7 +17,7 @@ const Breadcrumbs = ({ items = [] }) => {
                       aria-current={isLast ? 'page' : undefined}
                     >
                       {item.url && item.url !== '#' ? (
-                        <a href={item.url} className="breadcrumb-link">{item.label}</a>
+                        <a href={item.url} className="breadcrumb-link" title={item.title}>{item.label} </a>
                       ) : (
                         item.label
                       )}

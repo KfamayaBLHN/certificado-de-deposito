@@ -1,21 +1,31 @@
 .h2 {
-    font-size: 2rem !important;
-    padding-bottom: 15px !important;
-    font-weight: 500 !important;
-}
-
-@media (min-width: $size-xl) {
-    .h2 {
-        font-size: 2rem !important;
-        line-height: 2.75rem;
-    }
+    font-size: $h2-font-size-mobile !important;
+    padding-bottom: 15px;
+    font-weight: $font-weight-semi-bold !important;
 }
 
 .card-groud-n3 .card .card-body {
     text-align: center !important;
 }
+
 .card-groud-n3 .card {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.relacionadosSection {
+    padding: 48px 0;
+}
+
+@media (min-width: $size-lg) {
+    .h2 {
+        font-size: $h2-font-size-desktop !important;
+        line-height: $h2-line-height-desktop;
+        letter-spacing: $letter-spacing;
+    }
+
+    .relacionadosSection {
+        padding: 72px 0;
+    }
 }

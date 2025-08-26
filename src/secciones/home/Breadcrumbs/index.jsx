@@ -5,8 +5,8 @@ export default props => {
     <>
       <Breadcrumbs items={
         [
-          {label: "Inicio", url: 'https://www.lafise.com/blh'},
-          {label: "Banca personal", url: 'https://www.lafise.com/blh/banca-personal'},
+          {label: "Inicio", url: 'https://www.lafise.com/blh', title: 'Banco LAFISE'},
+          {label: "Banca personal", url: 'https://www.lafise.com/blh/banca-personal', title: 'Banco LAFISE - banca personal'},
           {label: "Cuenta Horizonte", url: '#'}
         ]
       } />

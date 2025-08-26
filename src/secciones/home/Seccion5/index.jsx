@@ -17,33 +17,36 @@ export default props => {
       className="section-5 d-flex flex-column justify-content-center"
       id="requisitos"
       style={{
-        height: 'auto',
-        minHeight: '360px'
+        minHeight: 'auto',
       }}
     >
-      <article className="container-fluid h-100">
-      <div className="row gx-0 flex-md-row h-100">
-
-        {/* Imagen */}
-        <div className="col-12 col-md-6 d-flex justify-content-center align-items-end divMejor">
-          <Images
-            className="img-fluid object-fit-contain"
-            source={sources}
-            name="ImagenSeccion5"
-          />
-        </div>
-
-        {/* Texto */}
-        <div className="col-12 col-md-6 d-flex flex-column justify-content-center ps-2 pe-2">
-          <h2 className="h2">Recibe atención personalizada</h2>
-          <p className="pb-1 pt-1 p">
-            Llena tus datos en el formulario y uno de nuestros 
-            agentes se comunicará contigo para asesorarte en el proceso de apertura
-          </p>
-        </div>
-          
+      <article className="container-fluid h-100" style={{ height: '100%' }}>
+        <div className="row gx-0 flex-md-row h-100" style={{ height: '100%' }}>
+  
+          {/* Imagen */}
+          <div
+            className="col-12 col-md-6 d-flex justify-content-center align-items-end divMejor"
+            style={{ height: '100%' }}
+          >
+            <Images
+              className="img-fluid object-fit-contain align-self-end"
+              source={sources}
+              name="ImagenSeccion5"
+            />
+          </div>
+  
+          {/* Texto */}
+          <div className="col-12 col-md-6 d-flex flex-column justify-content-center div-text-container">
+            <h2 className="h2">Recibe atención personalizada</h2>
+            <p className="p">
+              Llena tus datos en el formulario y uno de nuestros
+              agentes se comunicará contigo para asesorarte en el proceso de apertura
+            </p>
+          </div>
+  
         </div>
       </article>
     </section>
   );
+  
 };

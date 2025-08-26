@@ -2,67 +2,69 @@
   position: relative;
   padding-top: 3rem;
   padding-bottom: 0rem;
-
+  
   background-image: url('/imagenes/seccion_extra/fondos/bkg-secondary-se-chl-blhn-mobile-01-1x.webp');
   background-repeat: no-repeat;
-  background-position: right center; /* O right bottom, según prefieras */
-  background-size: cover; /* Cambiado a cover para que cubra todo el ancho y alto */
+  background-position: right center;
+  background-size: cover;
   background-attachment: scroll;
-
-  width: 100vw; /* Forzar el ancho al 100% de viewport */
-  margin-left: calc(-50vw + 50%); /* Esto centra el background para que no tenga margen a los lados */
+  
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
 
   .h2 {
-    font-size: 1.75rem;
-    line-height: 38px;
-    text-align: left; // Centrar el título en pantallas pequeñas
-    //margin-bottom: 1rem; // Espacio inferior
-    font-weight: 500 ;
-    letter-spacing: -2;
+    font-size: $h2-font-size-mobile;
+    line-height: $h2-line-height-mobile;
+    font-weight: $font-weight-semi-bold;
+    letter-spacing: $letter-spacing;
     color: #ffffff;
   }
-
+  
   .imag {
     display: flex;
     justify-content: center;
   }
-
+  
   .img-section-3 {
     height: auto;
   }
-
-  // Pseudo-elemento (revisar su uso)
+  
   &::after {
-    content: ""; // Necesario para que se muestre
-    display: none; // Ocultar por defecto
+    content: "";
+    display: none;
     position: absolute;
-    // ... (Estilos que tenías, pero considera si son necesarios y responsivos)
-    // @include wh(223px, 153px);
-    // top: 185px !important;
-    // right: -140px;
   }
 }
 
-// Media Queries
+// Media Queries (Mobile First)
 
+// Estilos para pantallas de 360px+
 @media (min-width: 360px) {
   .section-3 {
-    min-height: 100vh; // 🟢 fuerza la altura total de pantalla
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; // 🟢 distribuye contenido
+    justify-content: space-between;
 
+    .movilDiv{
+      padding-bottom: 32px;
+    }
+
+    .img-bono-bienvenida{
+      padding-bottom: 8px;
+    }
+    
     li {
       padding-bottom: 16px;
-      font-size: 16px;
-      line-height: 19px;
-      font-weight: 400;
+      font-size: $p-font-size-mobile;
+      line-height: $p-line-height-mobile;
+      font-weight: $font-weight-regular;
     }
     .h2 {
-      font-size: 1.75rem;
-      line-height: 38px;
+      font-size: $h2-font-size-mobile;
+      line-height: $h2-line-height-mobile;
       text-align: center;
-      padding-bottom: 16px !important;
+      padding-bottom: 24px;
       margin-bottom: 0px;
       text-justify: auto;
     }
@@ -72,53 +74,50 @@
       flex-direction: column;
       justify-content: space-between;
     }
-
+    
     .row {
       flex-grow: 1;
       display: flex;
       flex-direction: column-reverse;
       justify-content: space-between;
     }
-
+    
     .img-section-3 {
       max-width: 260px;
       margin: 1rem auto 0 auto;
     }
+
+    .movilCenter {
+      align-items: center;
+      padding-bottom: 32px;
+    }
   }
 }
 
-@media (max-width: 575.98px) {
-  .movilCenter {
-    align-items: center;
-  }
-
-  .btn-cta {
-    align-self: center;
-    width: 240px;
-    margin-bottom: 43px;
-}
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
+// Estilos para Tablet (768px - 991px)
+@media (min-width: 760px) and (max-width: 991px) {
   .section-3 {
     background-image: url('/imagenes/seccion_extra/fondos/bkg-secondary-se-chl-blhn-tablet-01-1x.webp');
     background-repeat: no-repeat;
-    padding: 0vw 0 0vw 0;
+    padding: 32px 0 0vw 0;
 
+    .movilCenter {
+      align-items: start;
+      padding-bottom: 32px;
+    }
+    
     .h2 {
-      padding-top: 32px;
-      font-size: 1.75rem;
-      line-height: 38px;
-      text-align: left; // Alinear a la izquierda en pantallas medianas
-      padding-bottom: 16px;
+      font-size: $h2-font-size-desktop;
+      line-height: $h1-line-height-mobile;
+      text-align: left;
+      padding-bottom: 24px;
     }
     .list-bullet-check li {
-      line-height: 24px;
+      line-height: $p-line-height-desktop;
     }
-
+    
     .img-section-3 {
-      // max-width: 600px;
-      max-width: 100%; // Imagen flexible
+      max-width: 100%;
       width: 100%;
       height: auto;
       padding-top: 48px;
@@ -129,82 +128,77 @@
       max-width: 110% !important;
       translate: -25px 72px;
     }
-
+    
     &::after {
-      display: block; // Mostrar el pseudo-elemento en pantallas medianas
+      display: block;
     }
   }
 }
 
-@media (min-width: $size-md) {
-}
-
-@media (min-width: $size-lg) {
+// Estilos para Desktop (992px a 1399px)
+@media (min-width: 992px) and (max-width: 1399px) {
   .section-3 {
-    padding: 72px 0; // Ajustar padding para pantallas grandes
-
-    .h2 {
-      font-size: 28px;
-      line-height: 44px;
-      padding-bottom: 0px;
-      color: #ffffff;
-    }
-  }
-}
-
-@media (min-width: $size-xxl) {
-  .section-3 {
-    background-image: url('/imagenes/seccion_extra/fondos/bkg-secondary-se-chl-blhn-desktop-01-1x.webp');
+    padding: 72px 0 0 0;
+    background-image: url('/imagenes/seccion_extra/fondos/bkg-secondary-se-chl-blhn-tablet-01-1x.webp'); // Agregado para solucionar el problema del background
     background-repeat: no-repeat;
-    padding: 10px 0; // Volver a píxeles si es necesario para pantallas muy grandes
-
+    background-size: cover;
+    background-position: center;
+    
     .h2 {
-      font-size: 2.5rem;
-      line-height: 3rem;
+      font-size: $h2-font-size-desktop;
+      line-height: $h1-line-height-mobile;
+      padding-bottom: 24px;
+      color: #ffffff;
       text-align: left;
+      padding-top: 0px;
     }
 
-    .img-section-3 {
-      max-width: 550px;
-      padding: 20px 0 0 0;
+    .img-bono-bienvenida{
+      padding-bottom: 0px;
     }
-  }
-}
 
-  /* Large (992px - 1399px) */
-
-  @media (min-width: 992px) and (max-width: 1399px) {
-    .section-3 {
-      .img-fluid {
-        max-height: 500px;
-      }
-      .h2 {
-        font-size: 32px !important;
-        line-height: 44px;
-        text-align: left;
-        padding-bottom: 0px !important;
-        padding-top: 0px !important;
-      }
-
-    }
-  }
-
-
-@media (min-width: 1400px) {
-  .section-3 {
-    padding: 30px 0 0 0;
     .img-fluid {
       max-height: 500px;
     }
-    .h2 {
-      text-align: left;
-      font-size: 32px !important;
-      line-height: 44px;
-      padding-bottom: 0px !important;
-      padding-top: 0px !important;
-      padding-right: 72px;
+
+    .movilCenter {
+      align-items: left;
+      padding-bottom: 32px;
     }
-
   }
+}
 
+// Estilos para Desktop extra grande (1400px en adelante)
+@media (min-width: 1400px) {
+    .section-3 {
+        background-image: url('/imagenes/seccion_extra/fondos/bkg-secondary-se-chl-blhn-desktop-01-1x.webp');
+        background-repeat: no-repeat;
+        padding: 72px 0 0 0;
+
+        .img-bono-bienvenida{
+          padding-bottom: 0px;
+        }
+        
+        .h2 {
+            font-size: $h1-font-size-desktop;
+            line-height: $h1-line-height-mobile;
+            text-align: left;
+            padding-right: 72px;
+            padding-bottom: 24px;
+        }
+        
+        .img-section-3 {
+            max-width: 550px;
+            padding: 20px 0 0 0;
+        }
+        
+        .img-fluid {
+            max-height: 500px;
+        }
+
+        .movilCenter {
+          align-items: left;
+          padding-bottom: 32px;
+        }
+    }
 }

@@ -1,25 +1,48 @@
-
-.section-7{
+.section-7 {
   background-color: #ffffff;
   color: #4d4d4d;
   padding-top: 3rem;
   padding-bottom: 3rem;
+
   .h2 {
-    font-size: 1.75rem;
-    line-height: 38px;
+    font-size: $h2-font-size-mobile;
+    line-height: $h2-line-height-mobile;
+    font-weight: $font-weight-semi-bold;
+    letter-spacing: $letter-spacing;
+    padding-bottom: 24px;
+  }
+
+  .container-fluid {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .questions {
+    padding-left: 12.7px;
+    padding-right: 12.7px;
+  }
+
+  .accordion-body {
+    padding: 0;
+    padding-top: 10px;
+    background-color: #ffffff;
   }
 }
-.qs p {
-  font-size: 16px !important; /* O el tamaño en px que desees */
-}
-.section-7 .container-fluid {
-  padding-left: 25px;
-  padding-right: 25px;
+
+.qs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  p {
+    font-size: $p-font-size-mobile !important;
+  }
 }
 
-.section-7 .questions {
-  padding-left: 12.7px;
-  padding-right: 12.7px;
+.p {
+  margin: 0;
+  padding-bottom: 2rem;
 }
 
 .row {
@@ -28,57 +51,38 @@
   align-items: center;
 }
 
-.qs{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.section5 .h2 {
-  padding-bottom: 30px;
-  font-size: 2.7rem;
-  text-align: center;
-}
-.section5 .p {
-  padding: 0px 15px;
-  text-align: center;
-}
-
-.p {
-  margin: 0;
-  padding-bottom: 2rem;
-}
-
 .title {
-  font-size: 18px;
-  line-height: 1rem;
+  font-size: $p-font-size-mobile;
+  line-height: $p-line-height-mobile;
 }
 
-.section-7 .accordion-body {
-  padding: 0;
-  padding-top: 10px;
-  background-color: #ffffff;
-}
-
-.desktopBreadcrumbs { 
+.desktopBreadcrumbs {
   display: none;
 }
 
+// Media Queries
+
 @media (min-width: 768px) {
   .section-7 {
+    .h2 {
+      padding-bottom: 24px;
+    }
     .p {
       padding-bottom: 32px;
     }
-
   }
 }
 
 @media (min-width: 1000px) {
   .section-7 {
-    .h2 {
-      font-size: 32px;
-    }
+    padding-top: 72px;
 
+    .h2 {
+      font-size: $h2-font-size-desktop;
+      line-height: $h2-line-height-desktop;
+      font-weight: $font-weight-bold;
+      letter-spacing: $letter-spacing;
+      padding-bottom: 24px;
+    }
   }
 }

@@ -6,14 +6,23 @@
   background-color: #FEF7EC !important;
 }
 
+.herodiv{
+  padding-bottom: 32px;
+}
+
 /* Asegura que container y row llenen el alto */
 .hero-section .container,
 .hero-section .row {
   height: 100%;
 }
 
-.color1 { color: #4D4D4D; }
-.color2 { color: #018765; }
+.color1 {
+  color: #4D4D4D;
+}
+
+.color2 {
+  color: #018765;
+}
 
 .btn-cta {
   font-size: 1rem;
@@ -59,17 +68,19 @@
 /* ======================== */
 
 .banner-title {
-  font-size: 40px;
-  line-height: 54px;
-  font-weight: 500;
-  letter-spacing: -2;
+  // Mobile First
+  font-size: $h1-font-size-mobile;
+  line-height: $h1-line-height-mobile;
+  font-weight: $font-weight-bold;
+  letter-spacing: $letter-spacing !important;
   text-align: center;
 }
 
 .banner-subheading {
-  font-size: 14px;
-  line-height: 19px;
-  font-weight: 400;
+  // Mobile First
+  font-size: $p-font-size-mobile;
+  line-height: $p-line-height-mobile;
+  font-weight: $font-weight-regular;
   max-width: 90%;
   margin: 0 auto 1.5rem auto;
   text-align: center;
@@ -78,26 +89,29 @@
 /* x-Small (≥360px) */
 //576
 @media (min-width: 360px) {
+
   .hero-section .container,
   .hero-section .row {
     height: 100%;
     // min-height: 100vh;
   }
+
   .banner-title {
-    //padding-top: 8.75vw; 48px
-    //padding-top: 48px;
-    font-size: 32px;
-    line-height: 2.5rem;
+    font-size: $h1-font-size-mobile;
+    line-height: $h1-line-height-mobile;
     padding-left: 22px;
     padding-right: 22px;
+    padding-top: 32px;
   }
 
   .banner-subheading {
     padding-top: 5%;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
+    font-size: $p-font-size-mobile;
+    line-height: $p-line-height-mobile;
+    font-weight: $font-weight-regular;
     max-width: 80%;
+    padding-bottom: 32px;
+    margin-bottom: 0px;
   }
 
   .btn-cta {
@@ -109,14 +123,18 @@
 /*Small (≥577px) */
 @media (min-width: 577px) and (max-width: 767) {
   .banner-title {
-    font-size: 32px;
-    line-height: 2.6rem;
-    font-weight: 500;
+    font-size: $h1-font-size-mobile;
+    line-height: $h1-line-height-mobile;
+    font-weight: $font-weight-semi-bold;
+    letter-spacing: -1px;
+    padding-top: 0px;
   }
 
   .banner-subheading {
-    font-size: 1.39rem;
-    line-height: 1.6rem;
+    font-size: $h3-font-size-mobile;
+    line-height: $h3-line-height-mobile;
+    padding-bottom: 32px;
+    margin-bottom: 0px;
   }
 
   .btn-cta {
@@ -126,17 +144,27 @@
 
 /* Medium (768px - 991px) */
 @media (min-width: 768px) and (max-width: 1199px) {
+  .hero-image-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   .h1 {
     padding-top: 47px;
-    font-size: 2rem;
-    line-height: 44px;
-    font-weight: 500;
+    font-size: $h2-font-size-desktop;
+    line-height: $h2-line-height-desktop;
+    font-weight: $font-weight-semi-bold;
+    letter-spacing: -1px;
   }
+
   .p {
-    line-height: 22px;
-    font-weight: 400;
+    line-height: $p-line-height-desktop;
+    font-weight: $font-weight-regular;
     padding-bottom: 0%;
   }
+
   .hero-section .container,
   .hero-section .row {
     height: 450px;
@@ -154,29 +182,29 @@
   }
 
   .banner-title {
-    font-size: 2.1rem;
-    line-height: 2.6rem;
+    font-size: $h3-font-size-desktop;
+    line-height: $h3-line-height-desktop;
     text-align: left;
-    //padding-top: 16px; eliminar
     margin-left: 0;
     max-width: 100%;
     padding-left: 40px;
+    padding-top: 0px;
   }
 
   .banner-subheading {
-    font-size: 1rem;
-    line-height: 22px;
+    font-size: $p-font-size-desktop;
+    line-height: $p-line-height-desktop;
     text-align: left;
     margin-left: 0;
     padding-left: 40px;
     padding-top: 16px;
+    padding-bottom: 32px;
+    margin-bottom: 0px;
   }
 
   .btn-cta {
-    margin-bottom: 43px;
+    margin-bottom: 0px;
     align-self: flex-start;
-    //padding: 0.6rem 1.2rem;
-    // padding-bottom: 17px;
     font-size: 1rem;
     margin-left: 0px;
     width: 240px;
@@ -184,6 +212,7 @@
 
   .btahero {
     margin-left: 40px;
+    margin-bottom: 25px;
   }
 
   .banner-image-container,
@@ -193,50 +222,55 @@
     justify-content: center;
     align-items: center;
   }
-  @media (min-width: 993px){
+
+  @media (min-width: 993px) {
     .btn-cta {
-      .p{
-       font-size: 16px; 
-        
+      .p {
+        font-size: $p-font-size-desktop;
       }
+    }
   }
-}
-  
 }
 
 /* Large (992px - 1399px) */
 @media (min-width: 1200px) and (max-width: 1399px) {
-  
+
   .banner-title {
-    font-size: 2.3rem;
-    line-height: 2.75rem;
+    font-size: $h2-font-size-desktop;
+    line-height: $h2-line-height-desktop;
     text-align: left;
     padding-top: 42px;
   }
 
   .banner-subheading {
-    font-size: 1.2rem;
-    line-height: 1.8rem;
+    font-size: $p-font-size-desktop;
+    line-height: $p-line-height-desktop;
     text-align: left;
     margin-left: 0;
     padding-left: 22px;
     padding-top: 16px;
   }
+
+  .btahero {
+    margin-left: 20px !important;
+  }
+
+
   .btn-cta {
     margin-left: 0;
     margin-right: 0;
     text-align: left;
     align-self: flex-start;
-    margin-left: 22px;
-    width: 200px;
+    margin-left: 0px;
+    width: 240px;
   }
 }
 
 /* Extra Large (≥1400px) */
 @media (min-width: 1400px) {
   .banner-title {
-    font-size: 2.6rem;
-    line-height: 2.75rem;
+    font-size: $h1-font-size-desktop;
+    line-height: $h1-line-height-desktop;
     text-align: left;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -246,7 +280,7 @@
 
   .banner-subheading {
     margin-top: 0;
-    font-size: 1.25rem;
+    font-size: $p-font-size-desktop;
     text-align: left;
     margin-left: 47px;
     margin-bottom: 0px;
@@ -255,6 +289,7 @@
     line-height: 27px;
     padding-right: .5rem;
   }
+
   .btn-cta {
     margin-left: 0;
     margin-right: 0;
@@ -267,7 +302,3 @@
     margin-left: 47px;
   }
 }
-
-/* ======================== */
-/* Imagen alineada al fondo */
-/* ======================== */

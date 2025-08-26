@@ -1,17 +1,16 @@
 .section-5 {
   background: linear-gradient(270deg, #DCF5E4 5%, #FEFFFE 70%);
   position: relative;
-  padding-top: 3rem; // Padding responsivo
+  padding-top: 3rem;
   padding-bottom: 0;
 
   .h2 {
-    font-size: 1.75rem;
-    line-height: 38px;
-    text-align: center; // Centrar el título en pantallas pequeñas
-    //margin-bottom: 1rem; // Espacio inferior
-    font-weight: 500;
-    letter-spacing: -2;
-    color: #4d4d4d
+    font-size: $h2-font-size-mobile;
+    line-height: $h2-line-height-mobile;
+    text-align: center;
+    font-weight: $font-weight-semi-bold;
+    letter-spacing: $letter-spacing;
+    color: #4d4d4d;
   }
 
   .imag {
@@ -23,15 +22,10 @@
     height: auto;
   }
 
-  // Pseudo-elemento (revisar su uso)
   &::after {
-    content: ""; // Necesario para que se muestre
-    display: none; // Ocultar por defecto
+    content: "";
+    display: none;
     position: absolute;
-    // ... (Estilos que tenías, pero considera si son necesarios y responsivos)
-    // @include wh(223px, 153px);
-    // top: 185px !important;
-    // right: -140px;
   }
 }
 
@@ -39,15 +33,12 @@
 
 @media (min-width: 360px) {
   .section-5 {
-    min-height: 100vh; // 🟢 fuerza la altura total de pantalla
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-between; // 🟢 distribuye contenido
+    justify-content: space-between;
 
     .h2 {
-      font-size: 1.75rem;
-      line-height: 38px;
-      text-align: center;
       padding-bottom: 16px !important;
       margin-bottom: 0px;
       text-justify: initial;
@@ -79,25 +70,27 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  
   .section-5 {
-    padding: 0vw 0 0vw 0;
+    padding: 48px 0 0vw 0;
 
-
+    .div-text-container {
+      padding-left: 32px;
+    }
     .p {
       text-align: left;
     }
 
     .h2 {
       padding-top: 32px;
-      font-size: 1.75rem;
-      line-height: 38px;
-      text-align: left; // Alinear a la izquierda en pantallas medianas
+      font-size: $h2-font-size-desktop;
+      line-height: $h2-line-height-desktop;
+      text-align: left;
       padding-bottom: 16px;
     }
 
     .img-section-5 {
-      // max-width: 600px;
-      max-width: 100%; // Imagen flexible
+      max-width: 100%;
       width: 100%;
       height: auto;
       padding-top: 48px;
@@ -106,89 +99,67 @@
     }
     .img-fluid {
       max-width: 110% !important;
-      translate: -25px 25px;
+      translate: -25px 0px;
     }
 
     &::after {
-      display: block; // Mostrar el pseudo-elemento en pantallas medianas
+      display: block;
     }
   }
 }
 
-@media (min-width: $size-md) {
-}
-
-@media (min-width: $size-lg) {
+@media (min-width: 992px) {
   .section-5 {
-    padding: 72px 0; // Ajustar padding para pantallas grandes
+    padding: 32px 0 0 0;
 
     .h2 {
-      font-size: 28px;
-      line-height: 44px;
+      font-size: $h3-font-size-desktop;
+      line-height: $h3-line-height-desktop;
       padding-bottom: 0px;
+      text-align: left;
+      padding-top: 0px;
+      padding-right: 0px;
     }
 
+    .p {
+      text-align: left;
+      padding: 16px 0px 32px 0px;
+    }
   }
 }
 
-@media (min-width: $size-xxl) {
+@media (min-width: 991px) and (max-width: 1399px) {
   .section-5 {
-    padding: 10px 0; // Volver a píxeles si es necesario para pantallas muy grandes
-
-    .h2 {
-      font-size: 2.5rem;
-      line-height: 3rem;
+    .img-fluid {
+      max-height: 500px;
     }
 
-    .img-section-5 {
-      max-width: 550px;
-      padding: 20px 0 0 0;
+    .section-5 {
+      padding-bottom: 0;
     }
   }
 }
-
-  /* Large (992px - 1399px) */
-
-  @media (min-width: 992px) and (max-width: 1399px) {
-    .section-5 {
-      .img-fluid {
-        max-height: 500px;
-      }
-      .h2 {
-        font-size: 32px !important;
-        line-height: 44px;
-        padding-bottom: 0px !important;
-        padding-top: 0px !important;
-        text-align: left;
-      }
-
-      .p {
-        text-align: left;
-      }
-    }
-  }
-
 
 @media (min-width: 1400px) {
   .section-5 {
     padding-bottom: 0%;
 
-    .img-fluid {
-      min-height: 350px;
+    .p {
+      padding-right: 3rem;
+      margin-right: 3rem;
     }
 
-    .p {
-      text-align: left;
-    }
-    
     .h2 {
-      font-size: 32px !important;
-      line-height: 44px;
+      font-size: $h2-font-size-desktop !important;
+      line-height: $h2-line-height-desktop;
       padding-bottom: 0px !important;
       padding-top: 0px !important;
       padding-right: 72px;
       text-align: left;
     }
-  }
 
+    .img-fluid {
+      min-height: 350px;
+    }
+  }
 }

@@ -11,7 +11,7 @@ import Obten from './Obten';
 const Relacionados = (props) => {
   const backgroundColor = "bg-gray-1";
   return (
-    <section className={`py-5 overflow-hidden`} style={{ backgroundColor: '#F9F9F9' }}>
+    <section className={`relacionadosSection overflow-hidden`} style={{ backgroundColor: '#F9F9F9' }}>
       <div className="container-fluid">{props.children}</div>
     </section>
   );
@@ -19,11 +19,11 @@ const Relacionados = (props) => {
 
 const responsive = {
   desktop: {
-    breakpoint: { max: 4000, min: 1024 },
+    breakpoint: { max: 4000, min: 992 },
     items: 3
   },
   tablet: {
-    breakpoint: { max: 1024, min: 576 },
+    breakpoint: { max: 792, min: 576 },
     items: 2
   },
   mobile: {
@@ -73,7 +73,7 @@ const Cards = props => {
 
 const Title = props => {
   return <div className="row">
-    <div className="col-12 text-center pb-5">
+    <div className="col-12 text-center" style={{ paddingBottom: '32px' }}>
       <h2 className="h2">{props.children}</h2>
     </div>
   </div>

@@ -6,7 +6,7 @@ export default props => {
     <div className="container-fluid">
       <div className="row qs">
         <div className="col-12 text-md-center">
-          <h2 className="h2 pb-5">¿Tienes dudas?... Aquí te apoyamos</h2>
+          <h2 className="h2">¿Tienes dudas?... Aquí te apoyamos</h2>
         </div>
       </div>
         
